@@ -1,2 +1,17 @@
-@import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/common';
+
+@import './componetns/header';
+@import './componetns/hero';
+@import './componetns/products';
+@import './componetns/about';
+@import './componetns/advantages';
+@import './componetns/gallery';
+@import './componetns/reviews';
+@import './componetns/contacts';
+@import './componetns/footer';
+
+@import './componetns/product-card';
+@import './componetns/ingredients';
+@import './componetns/location';
+@import './componetns/franchise';

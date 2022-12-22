@@ -1,0 +1,58 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    font-family: 'Seymour One', 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: $color-black;
+    background-color: $color-green;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .visially-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+   
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+  
+    max-width: $mobile;
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+      padding: 0 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: $desktop;
+      padding: 0 16px;
+    }
+  }
