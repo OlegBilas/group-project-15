@@ -1,7 +1,7 @@
   %transition {
       transition-property: color, border, fill, background-color, box-shadow;
-      transition-duration: var(--timer);
-      transition-timing-function: var(--timing-function);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 
