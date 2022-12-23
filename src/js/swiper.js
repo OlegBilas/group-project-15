@@ -1,4 +1,4 @@
-//import "../../node_modules/swiper/swiper-bundle.min.js";
+//import "~node_modules/swiper/swiper-bundle.min.js";
 //import Swiper from 'swiper/bundle';
 
 const swiper = new Swiper('.swiper', {
