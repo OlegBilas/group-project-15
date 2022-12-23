@@ -1,0 +1,10 @@
+  %transition {
+      transition-property: color, border, fill, background-color, box-shadow;
+      transition-duration: var(--timer);
+      transition-timing-function: var(--timing-function);
+  }
+
+
+  %nodecor {
+      text-decoration: none;
+  }
