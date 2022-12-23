@@ -28,23 +28,37 @@
                   </picture>
           </a>
 
-          <button
-            type="button"
-            class="button-mobile is-open"
-            aria-expanded="false"
-            data-menu-button
-          >
-            <svg
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg
               class="button-icon-mob"
               width="20"
               height="20"
               aria-label="Перемикач мобільного меню"
             >
               <use class="button-mobile__menu" href="../src/images/icons.svg#icon-menu"></use>
-              <use class="button-mobile__cross" href="../src/images/icons.svg#icon-close"></use>
             </svg>
-          </button>
-          <div class="menu-container" id="menu-container" data-menu>
+</button>
+
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+
+  <button
+          class="menu-toggle js-close-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg
+              class="button-icon-mob"
+              width="20"
+              height="20"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="button-mobile__menu" href="../src/images/icons.svg#icon-close"></use>
+            </svg>
+</button>
+
             <ul class="nav-list">
               <li class="nav-list__item">
                 <a href="./index.html" class="nav-list__link studio current">Home</a>
@@ -59,6 +73,7 @@
                 <a href="./index.html" class="nav-list__link">Contact</a>
               </li>
             </ul>
+
 <div class="nav-menu__btn-in">
             <button type="button" class="nav-menu__btn">
               <span class="nav-menu__btn-text">Buy now</span>

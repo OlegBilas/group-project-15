@@ -6,15 +6,12 @@
 .photo {
     @media screen and (min-width: 320px) {
     width:40px;
-    height:37px;
 }
 @media screen and (min-width: $tablet) {
     width: 48px;
-    height: 44px;
 }
 @media screen and (min-width: $desktop) {
     width: 60px;
-    height: 65px;
 }
 
 }
@@ -22,7 +19,7 @@
 .nav-menu {
     @include flexCenter();
 
-    @media screen and (min-width: 120px) and (max-width: 767px) {
+    @media screen and (min-width: 120px) and (max-width: 768px) {
     justify-content: space-between;
     padding-top: 12px;
     }
@@ -132,40 +129,6 @@
 
 // =====================================================================================================================//
 
-.button-mobile {
-    display: inline-flex;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    position: relative;
-    z-index: 3;
-
-    @media screen and (min-width: $tablet) {
-            margin-left: 444px;
-        }
-
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-
-
-}
-
-.button-mobile__menu {
-    display: none;
-}
-
-.button-mobile.is-open .button-mobile__menu {
-    display: block;
-
-}
-
-.button-mobile.is-open .button-mobile__cross {
-    display: none;
-    
-}
-
-
 .menu-container {
 
 text-align: center;
@@ -206,16 +169,6 @@ text-align: center;
     }
 }
 
-
-.button-icon-mob {
-    @extend %transition;
-    fill: $color-white;
-    cursor: pointer;
-}
-
-.button-icon-mob:hover {
-    fill: $color-black;
-}
 
 
 // ==================== Mob menu buttom ==============//
@@ -271,4 +224,77 @@ text-align: center;
         margin-left: 205px;
     }
 
+}
+
+
+
+
+
+
+
+
+// =====================================================//
+
+.menu-toggle {
+    min-height: 20px;
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    // border-radius: 50%;
+    outline: none;
+}
+
+@media (min-width: 1199px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    fill: $color-black;
+}
+
+
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+// .mobile-menu {
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+// }
+
+// .mobile-menu .link {
+//     display: block;
+//     padding: 10px;
+//     color: #fff;
+//     text-decoration: none;
+// }
+
+.button-icon-mob {
+    @extend %transition;
+    fill: $color-white;
+    cursor: pointer;
+
+@media (min-width: 767px) and (max-width: 1199px) {
+    
+            margin-left: 444px;
+}
+}
+
+.button-icon-mob:hover {
+    fill: $color-black;
 }
