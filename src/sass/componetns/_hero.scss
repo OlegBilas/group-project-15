@@ -1,0 +1,136 @@
+.hero {}
+
+.section {}
+
+.container {}
+
+.hero__title {
+    // position: absolute;
+    width: 367px;
+    height: 144px;
+    left: 16px;
+    top: 118px;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FCFCFC;
+}
+
+.hero__product-link {
+    // position: absolute;
+    width: 66px;
+    height: 18px;
+    left: 34px;
+    top: 12px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #131313;
+}
+
+.hero__about-link {
+    // position: absolute;
+    width: 111px;
+    height: 17px;
+    left: 22px;
+    top: 12px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #F8D24E;
+}
+
+.hero__filias-list {
+    margin-left: auto;
+}
+
+.hero__filias-item {
+    margin-left: auto;
+}
+
+.hero__filias-number {
+    // position: absolute;
+    width: 52px;
+    height: 56px;
+    left: 1132px;
+    top: 126px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+}
+
+.hero__filias-type {
+    // position: absolute;
+    width: 79px;
+    height: 17px;
+    left: 1105px;
+    top: 279px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #FCFCFC;
+}
+
+.hero__info {
+    // position: absolute;
+    width: 200px;
+    height: 80px;
+    left: 257px;
+    top: 441px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+
+    color: #FCFCFC;
+}
+
+.hero__icon {}
+
+.img {}
