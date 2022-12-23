@@ -1,1 +1,19 @@
 @import "../../node_modules/swiper/swiper-bundle.min.css";
+
+.customers__img {
+  border-radius: 50%;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.customers__review {
+  padding: 35px 39px;
+
+  background-color: $color-green;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+
+  color: $color-white;
+}
