@@ -1,0 +1,152 @@
+.about {
+    padding-top: 61px;
+}
+
+.caption {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(38 / 30);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 32px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+    &-label {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: calc(22 /18);    
+        text-align: center;
+        text-transform: uppercase;
+        color: #FCFCFC;
+        margin-bottom: 12px;
+    }
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cow {
+    width: 280px;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.read-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:nth-child(1) {
+        margin-bottom: 4px;
+    }
+
+    &--information {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 176%;        
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: $color-white;
+
+        width: 100%;
+        max-width: 450px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    &__button {
+        background: $color-yellow;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 12px 54px;
+
+        font-weight: 600;
+        line-height: calc(18 / 14);        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+
+        &:hover {
+            background-color: #0A8817;
+        }
+
+        &:focus {
+            background-color: #0A8817;
+            color: $color-white;
+        }
+
+        &--icon {
+            margin-left: 4px;
+            fill: currentColor;
+        }
+    }
+}
+
+.modal-read-more {
+    background-color: $color-white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vm;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        color: $color-black;
+        border: none;
+        background-color: $color-white;
+        border-radius: 100%;
+        transform: color $time-duration $timing-function;
+
+        &:hover, &:focus {
+            color: black;
+        }
+
+        &--icon {
+            fill: currentColor;
+        }
+    }
+
+    &--caption {
+        font-family: 'Seymour One';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(24 / 16);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $color-black;
+    }
+
+    &--video {
+        width: 100%;
+        max-width: $mobile;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &--information {
+        font-weight: 400;
+        line-height: 140%;
+        max-width: 450px;
+    }
+}
+
+.is-hidden {
+    display: none;
+}
