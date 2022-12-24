@@ -1,39 +1,40 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button data-modal-close class="btn-close">
-      <svg class="btn-close_icone">
+      <svg class="btn-close__icone">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <h2 class="modal_head">Chololate icecream</h2>
+
+    <h2 class="modal-head">Chololate icecream</h2>
 
     <div>
-      <img class="modal_img"
+      <img class="modal__img"
       srcset="./images/ingredients/ingr.png 1x, ./images/ingredients/ingrx2.png 2x"
-      src="./images/ingredients/ingr.png" alt="icecream" width="132" height="auto">
+      src="./images/ingredients/ingr.png" alt="icecream" width="auto" height="auto">
     </div>
     
-    <div class="modal_card">
-      <ul>
-        <li class="card_item">
+    <div>
+      <ul class="modal-card">
+        <li class="modal-card__item">
           <img
           srcset="./images/ingredients/card1.png 1x, ./images/ingredients/card1x2.png 2x"
           src="./images/ingredients/card1.png" alt="calories" width="53" height="auto">
         </li>
 
-        <li>
+        <li class="modal-card__item">
           <img
           srcset="./images/ingredients/card2.png 1x, ./images/ingredients/card2x2.png 2x"
           src="./images/ingredients/card2.png" alt="protein" width="53" height="auto">
         </li>
 
-        <li>
+        <li class="modal-card__item">
           <img
           srcset="./images/ingredients/card3.png 1x, ./images/ingredients/card3x2.png 2x"
           src="./images/ingredients/card3.png" alt="fats" width="53" height="auto">
         </li>
 
-        <li>
+        <li class="modal-card__item">
           <img
           srcset="./images/ingredients/card4.png 1x, ./images/ingredients/card4x2.png 2x"
           src="./images/ingredients/card4.png" alt="carbs" width="53" height="auto">
@@ -41,9 +42,10 @@
         </li>
       </ul>
     
-    <h3>Ingredients</h3>
-    <div class="modal_list">
-      <div>
+    <h3 class="modal-head---small">Ingredients</h3>
+    
+    <div class="modal-list">
+      <div class="modal-list__name">
         <p>Milk</p>
         <p>Belgian chocolate</p>
         <p>Cream</p>
@@ -52,7 +54,7 @@
         <p>Vanilla sugar</p>
       </div>
 
-      <div>
+      <div class="modal-list__quantity">
         <p>100ml</p>
         <p>20g</p>
         <p>150 ml</p>
@@ -62,21 +64,23 @@
       </div>
     </div>
 
+    <form class="modal-form" name="" autocomplete="off">
+      <label>
+        <input type="text" name="name" placeholder="Name">
+      </label>
+  
+      <label>
+        <input type="text" name="phone" placeholder="Phone">
+      </label>
+  
+      <label>
+        <textarea name="" placeholder="Comment"></textarea>
+      </label>
+  
+      <button type="submit">Submit</button>
+    </form>
+
   </div>
 
-  <form class="" name="" autocomplete="off">
-    <label>
-      <input type="text" name="name" placeholder="Name">
-    </label>
-
-    <label>
-      <input type="text" name="phone" placeholder="Phone">
-    </label>
-
-    <label>
-      <textarea name="" placeholder="Comment">
-    </label>
-
-    <button type="submit">Submit</button>
-  </form>
+  
 </div>
