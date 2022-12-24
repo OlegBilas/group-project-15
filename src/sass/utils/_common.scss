@@ -42,6 +42,43 @@ img {
   margin: -1px;
 }
 
+.backgroung-ice-cream {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // Mobile screen
+  background-image: url(../images/backgroud-mobile.jpg);
+  // retina mobile screen
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/backgroud-mobile@2x.jpg);
+  }
+
+  // Tablet screen
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/backgroud-tablet.jpg);
+    // retina tablet screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/backgroud-tablet@2x.jpg);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/backgroud-desktop.jpg);
+    // retina desktop screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/backgroud-desktop@2x.jpg);
+    }
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
