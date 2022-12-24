@@ -1,3 +1,59 @@
 <div class="backdrop is-hidden" data-modal>
-  <form class="" name="" autocomplete="off"></form>
+  <div class="product-modal">
+		<p class="product-modal__title">Buy now</p>
+		<ul class="list product-modal__gallary">
+		 <li class="product-modal__card cream">
+		  <div class="product-modal__item">
+			 <div class="product-modal__bg ice-cream"></div>
+			 	  
+			 <img class="product-modal__photo" src="./images/Product-card/kelsey-curtis-G5ZenftPPOA-unsplash 2_132.png" alt="ice cream">
+			
+		  </div>
+		  <div>
+			<p class="product-modal__name">ice cream</p>
+		  </div>
+		 
+		 </li>
+  
+		 <li class="product-modal__card coffee">
+		  <div class="product-modal__item">
+			 <div class="product-modal__bg ice-coffee"></div>
+			 <img class="product-modal__photo" src="./images/Product-card/pariwat-pannium-0_qbeF_0zn8-unsplash 1_132.png" alt="ice coffee">
+		  </div>
+		  <p class="product-modal__name">ice coffee</p>
+		 </li>
+  
+		 <li class="product-modal__card milkshake">
+		  <div class="product-modal__item">
+			 <div class="product-modal__bg milk"></div>
+			 <img class="product-modal__photo" src="./images/Product-card/victor-rutka-4FujjkcI40g-unsplash 1_132.png" alt="milkshake">
+		  </div>
+		  <p class="product-modal__name">milkshake</p>
+		 </li>
+		</ul>
+  <form class="product-form" name="form" autocomplete="off">
+	 <div class="product-form__block">
+				
+				<input type="name" name="name" id="name" class="product-form__input" placeholder="Name"/>
+	 </div>
+  
+	 <div class="product-form__block">
+		<input type="tel" name="tel" id="tel" class="product-form__input" placeholder="Phone"/>
+		
+	 </div>
+  
+	 <div class="product-form__block">
+				<textarea name="comment" id="comment" rows="8" placeholder="Comment" class="product-form__text"></textarea>
+	 </div>
+  
+	 <button type="submit" class="product-form__submit">Submit</button>
+  </form>
+ 
+	<svg class="product-modal__close" width="20" height="20">
+		<use href="./images/icons.svg#icon-clarity_close-line"></use>
+	</svg>
+  
+	
+  
+  </div>
 </div>
