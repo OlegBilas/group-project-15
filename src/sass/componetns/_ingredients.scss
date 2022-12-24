@@ -5,18 +5,18 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1);  
-    // opacity: 1;
-    // transition: opacity $time-duration $timing-function;
+    opacity: 1;
+    transition: opacity $time-duration $timing-function;
     
-    // &.is-hidden {
-    //     // opacity: 0;
-    //     // pointer-events: none;
-    //     // transition: opacity $time-duration $timing-function;
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity $time-duration $timing-function;
 
-    //     // & .modal {
-    //     //     transform: translate(-50%, -50%);
-    //     // }
-    // }
+        & .modal {
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 .modal {
@@ -33,6 +33,8 @@
     border-radius: 10px;
 
     padding: 28px 0px 28px 0px;
+
+    transition: transform $time-duration $timing-function;
 }
 
 .btn-close {
@@ -43,16 +45,22 @@
     width: 32px;
     height: 32px;
     background-color: $color-white;
+    transition: cursor $time-duration $timing-function;
+
+    &:hover {
+        cursor: pointer;
+
+        & .btn-close__icone {
+            fill: $color-green-for-btn;
+        }
+    }
 }
 
 .btn-close__icone {
     width: 11px;
     height: 11px;
     color: $color-black;
-
-    &:hover {
-        fill: $color-green-for-btn;
-    }
+    transition: fill $time-duration $timing-function;
 }
 
 
@@ -137,6 +145,7 @@
         padding-bottom: 11px;
         border: 1px solid $color-green;
         border-radius: 10px;
+        transition: border $time-duration $timing-function, cursor $time-duration $timing-function; 
 
         &:focus,
         &:hover {
@@ -157,6 +166,7 @@ textarea {
     border: 1px solid $color-green;
     border-radius: 10px;
     margin-bottom: 24px;
+    transition: border $time-duration $timing-function, cursor $time-duration $timing-function;
 
         &:focus,
         &:hover {
@@ -187,12 +197,20 @@ textarea {
         margin-bottom: 24px;
     }
 
-    // .modal-card {
-    //     display: flex;
-    //     padding-left: 20px;
-    //     padding-right: 20px;
-    //     justify-content: space-between;
-    //     align-items: flex-start;
-    //     margin-bottom: 40px;    
-    // }
+    .modal-card {
+        padding-left: 124px;
+        padding-right: 124px;
+        margin-bottom: 48px;    
+    }
+
+    .modal-list {
+        margin-bottom: 48px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .modal-form {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
