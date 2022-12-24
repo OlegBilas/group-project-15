@@ -3,7 +3,11 @@
     z-index: 999;
 }
 
+<<<<<<< Updated upstream
 .photo {
+=======
+.nav-menu-photo {
+>>>>>>> Stashed changes
     @media screen and (min-width: 320px) {
     width:40px;
 }
@@ -182,11 +186,21 @@ text-align: center;
         border-radius: 10px;
         border: none;
         cursor: pointer;
+<<<<<<< Updated upstream
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-menu__btn:hover,
 .nav-menu__btn:focus {
         background-color: #0A8817;  
+=======
+        color: $color-deep-black;;
+        transition: background-color $time-duration $timing-function;
+}
+.nav-menu__btn:hover,
+.nav-menu__btn:focus {
+         background-color: $color-green-for-btn;
+            border-color: $color-green-for-btn;
+>>>>>>> Stashed changes
 }
 
 .nav-menu__btn:focus,
@@ -195,11 +209,14 @@ text-align: center;
         fill: $color-white;
 }
 
+<<<<<<< Updated upstream
 .nav-menu__btn-text {
     margin-right: 7px;
     color: #000000;
 }
 
+=======
+>>>>>>> Stashed changes
 .nav-menu__btn-in {
     @media screen and (min-width: $tablet) {
         display: none;
@@ -224,6 +241,7 @@ text-align: center;
 
 }
 
+<<<<<<< Updated upstream
 
 
 
@@ -234,34 +252,55 @@ text-align: center;
 // =====================================================//
 
 .menu-toggle {
+=======
+// =====================================================//
+
+.nav-mobile-btn {
+>>>>>>> Stashed changes
     min-height: 20px;
     min-width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     margin: 0;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
+<<<<<<< Updated upstream
     // border-radius: 50%;
+=======
+>>>>>>> Stashed changes
     outline: none;
 }
 
 @media (min-width: 1199px) {
+<<<<<<< Updated upstream
     .menu-toggle {
+=======
+    .nav-mobile-btn {
+>>>>>>> Stashed changes
         display: none;
     }
 }
 
+<<<<<<< Updated upstream
 .menu-toggle:hover,
 .menu-toggle:focus {
+=======
+.nav-mobile-btn:hover,
+.nav-mobile-btn:focus {
+>>>>>>> Stashed changes
     fill: $color-black;
 }
 
 
 
+<<<<<<< Updated upstream
 .menu-container .menu-toggle {
     position: absolute;
     top: 16px;
@@ -283,6 +322,16 @@ text-align: center;
 // }
 
 .button-icon-mob {
+=======
+.menu-container .nav-mobile-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    color: $color-white;
+}
+
+.nav-mobile-btn__style {
+>>>>>>> Stashed changes
     @extend %transition;
     fill: $color-white;
     cursor: pointer;
@@ -293,6 +342,10 @@ text-align: center;
 }
 }
 
+<<<<<<< Updated upstream
 .button-icon-mob:hover {
+=======
+.nav-mobile-btn__style:hover {
+>>>>>>> Stashed changes
     fill: $color-black;
 }
