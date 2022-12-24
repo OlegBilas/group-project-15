@@ -15,6 +15,14 @@
     margin-left: 60px;
     margin-right: 60px;
 
+    @media screen and (min-width: $tablet) {
+        margin: 0 0 72px 32px;        
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 82px;
+    }
+
     &-label {
         font-weight: 700;
         font-size: 18px;
@@ -30,18 +38,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .cow {
     width: 280px;
     height: 300px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        width: 330px;
+        height: 356px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 491px;
+        height: 529px;
+    }
 }
 
 .read-more {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        align-items: flex-start;
+        margin-left: 38px;
+    }
+
     &:nth-child(1) {
         margin-bottom: 4px;
     }
@@ -58,6 +87,36 @@
         max-width: 450px;
         margin-left: 50px;
         margin-right: 50px;
+
+        @media screen and (min-width: $tablet) {
+            text-align: start;
+            margin-left: 0;
+            margin-right: 0;
+            width: 336px;
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 463px;
+        }
+    }
+
+    &--additional-information {
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 176%;
+            letter-spacing: 0.04em;
+            color: $color-white;
+            width: 336px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 463px;
+        }
     }
 
     &__button {
@@ -72,6 +131,17 @@
         align-items: center;
         text-align: center;
         color: #000000;
+        transition-property: background-color, color;
+        transition-duration: $time-duration;
+        transition-timing-function: $timing-function;
+
+        @media screen and (min-width: $tablet) {
+            margin-top: 32px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-top: 54px;
+        }
 
         &:hover {
             background-color: #0A8817;
@@ -92,6 +162,8 @@
 .modal-read-more {
     background-color: $color-white;
     position: absolute;
+    top: 0;
+    right: 0;
     left: 0;
     bottom: 0;
     width: 100vm;
@@ -102,6 +174,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (min-width: $tablet) {
+        padding: 32px 60px;
+    }
+
     &--close {
         position: absolute;
         top: 12px;
@@ -110,10 +186,12 @@
         border: none;
         background-color: $color-white;
         border-radius: 100%;
-        transform: color $time-duration $timing-function;
+        transition-property: color;
+        transition-duration: $time-duration;
+        transition-timing-function: $timing-function;
 
         &:hover, &:focus {
-            color: black;
+            color: $color-green;
         }
 
         &--icon {
@@ -134,16 +212,27 @@
 
     &--video {
         width: 100%;
-        max-width: $mobile;
+        max-width: 450px;
         border-radius: 10px;
         margin-top: 20px;
         margin-bottom: 20px;
+
+        @media screen and (min-width: $tablet) {
+            width: 448px;
+            height: 205px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
     }
 
     &--information {
         font-weight: 400;
         line-height: 140%;
         max-width: 450px;
+
+        @media screen and (min-width: $tablet) {
+            width: 448px;
+        }
     }
 }
 
