@@ -109,6 +109,10 @@ img {
   &:focus {
     color: $color-white;
   }
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn--stroke {
