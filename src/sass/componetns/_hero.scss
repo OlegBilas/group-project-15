@@ -93,12 +93,19 @@
     color: $color-black;
     border: 2px solid $color-yellow;
     border-radius: 8px;
+    outline: none;
 
     cursor: pointer;
 
-    &:hover,
+    &:hover {
+        border: 2px solid $color-green-for-btn;
+    }
     &:focus {
-        border-color: ;
+        border: 2px solid $color-green-for-btn;
+        color: $color-white;
+    }
+    &:disabled {
+        border: 2px solid #ababab;
     }
 
     @media screen and (min-width: $desktop) {
@@ -122,6 +129,17 @@
     text-align: center;
 
     color: #F8D24E;
+    outline: none;
+
+    &:hover {
+        color: $color-green-for-btn;
+    }
+    &:focus {
+        color: $color-white;
+    }
+    &:disabled {
+        color: #ababab;
+    }
 
     @media screen and (min-width: $desktop) {
         width: 154px;
