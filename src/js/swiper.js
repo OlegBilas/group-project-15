@@ -1,9 +1,7 @@
-//import "~node_modules/swiper/swiper-bundle.min.js";
-//import Swiper from 'swiper/bundle';
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
   
     // If we need pagination
