@@ -1,0 +1,98 @@
+.advantages {
+    .container {
+        padding: 50px 45px 64px;
+    }
+}
+
+.statistic {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    &--section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:nth-child(1) {
+            &::before {
+                content: ' ';
+                background-image: url(../images/advantages/cow.png);
+                box-sizing: border-box;
+                width: 50px;
+                height: 50px;
+                display: block;
+            }
+        }
+        
+        &:nth-child(2) {
+            &::before {
+                content: ' ';
+                background-image: url(../images/advantages/weight.png);
+                box-sizing: border-box;
+                width: 50px;
+                height: 50px;
+                display: block;
+            }
+        }
+        
+        &:nth-child(3) {
+            &::before {
+                content: ' ';
+                background-image: url(../images/advantages/ice-crema.png);
+                box-sizing: border-box;
+                width: 50px;
+                height: 50px;
+                display: flex;
+            }
+        }
+
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 22px;
+            }
+        }
+
+        &--explanation {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 170%;
+            text-align: center;
+            color: $color-white;
+            max-width: 450px;
+
+            @media screen and (min-width: $tablet) {
+                width: 152px;
+            }
+
+            @media screen and (min-width: $desktop ) {
+                width: 368px;
+            }
+        }
+
+        &--amount {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: calc(44 / 36);
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $color-white;
+            margin-top: 16px;
+            margin-bottom: 16px;
+
+            @media screen and (min-width: $tablet) {
+                margin-top: 32px;
+                margin-bottom: 12px;
+            }
+
+            @media screen and (min-width: $desktop) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
