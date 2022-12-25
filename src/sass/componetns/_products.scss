@@ -1,18 +1,60 @@
 .products{
-   background-image: url(/src/images/backgroud-desktop.jpg);
-    background-size: 100%;
-    margin-top: 60px;
-    & h2{
-        padding-bottom: 148px;
-        text-align: center;
-     font-family: 'Seymour One';
-    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   @media screen and (mim-width: $mobile) {
+    max-width: 480px;
+   }
+   & h2 {
+    font-family: 'Seymour One';
     font-weight: 400;
-    font-size: 30px;
-    line-height: 38px;
-    letter-spacing: 0.04em;
-    color: #131313;
-    }
+font-size: 30px;
+line-height: 38px;
+
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #131313;
+margin-bottom: 148px;
+@media screen and(min-width:$tablet){
+font-size: 34px;
+line-height: 43px;
+margin-bottom: 200px;
+
+}
+@media screen and(min-width:$desktop){
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 303px;
+        }}
+    // & h2{
+     
+    //     padding-bottom: 148px;
+    //     text-align: center;
+    //  font-family: 'Seymour One';
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 30px;
+    // line-height: 38px;
+    // letter-spacing: 0.04em;
+    // color: #131313;
+    // @media screen and (min-width:$tablet) {
+     
+    //     font-size: 34px;
+    //     line-height: 43px;
+        
+    //     padding-bottom: 200px;
+       
+    // }
+    // @media screen and (min-width:$desktop) {
+     
+    //     font-size: 36px;
+    //     line-height: 45px;
+    //     color: aqua;
+    //     padding-bottom: 303px;
+       
+    // }
+    // }
 
     & p{
         padding-bottom: 12px;
@@ -24,6 +66,10 @@
         line-height: 37px;
         letter-spacing: 0.04em;    
         color:$color-black;
+        @media screen and (min-width:$desktop) {
+            font-size: 30px;
+        line-height: 37px;
+        }
         
     }
     &-item li+li {
@@ -32,9 +78,13 @@
            margin-top: 0;
            margin-left: 16px;
          }
-
+         @media screen and ( min-width: $desktop) {
+        
+            margin-left: 29px;
+          }
     }
     &-item{
+        
      display: block;
     
      @media screen and ( min-width: $tablet) {
@@ -48,20 +98,185 @@
     position: absolute;
     width: 200px;
     height: 200px;
- background-image: url(/src/images/podacts/ice.jpg);
+   
+ background-image:  url(/src/images/products/icecream.jpg);
+ z-index: 999;
   border-radius: 50%;
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(/src/images/products/icecream2x.jpg);
+  background-size: cover;
+}
+@media screen and (min-width:$tablet){
+    background-image:  url(/src/images/products/ice.desktop.jpg);
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/products/ice.desktop2x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width:$desktop){
+    width: 302px;
+    height: 302px;
+    top: -151px;
+ }
 
 
 }
+.products-list:nth-child(2n)::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -151px;
+   
+ background-image:  url(/src/images/products/icelatte.jpg);
+ z-index: 999;
+  border-radius: 50%;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(/src/images/products/icelatte2x.jpg);
+  background-size: cover;
+}
+@media screen and (min-width:$tablet){
+    background-image:  url(/src/images/products/latte.desktop.jpg);
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/products/lattedesktop2x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width:$desktop){
+   width: 302px;
+   height: 302px;
+   top: -151px;
+}
+
+
+
+}
+.products-list:last-child::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+   
+ background-image:  url(/src/images/products/ice.jpg);
+ z-index: 999;
+  border-radius: 50%;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(/src/images/products/ice2x.jpg);
+  background-size: cover;
+}
+@media screen and (min-width:$tablet){
+    background-image:  url(/src/images/products/milk.desktop.jpg);
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/products/milk.desktop2x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width:$desktop){
+    width: 302px;
+    height: 302px;
+    top: -151px;
+ }
+
+}
+
+.before-icecream::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+   
+    background-color:linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+ 
+  border-radius: 50%;
+  top: -88px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width:$desktop){
+    width: 302px;
+    height: 302px;
+    top: -135px;
+  }
+  
+}
+.before-latte::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+   
+    background-color:  linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);;
+box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+ 
+  border-radius: 50%;
+  top: -88px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width:$desktop){
+    width: 302px;
+    height: 302px;
+    top: -135px;
+  }
+  
+}
+.before-milk::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+   
+    background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+ 
+  border-radius: 50%;
+  top: -88px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width:$desktop){
+    width: 302px;
+    height: 302px;
+    top: -135px;
+  
+  }
+  
+}
 .products-list {
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
   height: 420px;
     max-width: 280px;
+   
+    background-color: #AEC6A5;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    background-color: $color-green;
     &:nth-child(2){
         background-color: #EFD478;
     }
@@ -73,12 +288,15 @@
     width: 280px;
 }
 @media screen and (min-width:$tablet) {
-   display: flex;
-   flex-direction: column;
+  
     min-height: 428px;
     min-width: 224px;
 }
-
+@media screen and (min-width:$desktop) {
+  
+    min-height: 536px;
+    min-width: 370px;
+}
 
     & h3{
         font-family: 'Montserrat';
@@ -97,21 +315,35 @@
             font-size: 22px;
             line-height: 27px;      
         }
-    
+        @media screen and (min-width:$desktop) {
+            padding-top: 197px;
+            font-size: 30px;
+            line-height: 37px;
+            padding-bottom: 66px;
+        }
     }
     
     
    & p{
-        padding-left: 40px;
-        padding-right: 40px;
+  display: block;margin-left: auto;margin-right: auto;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 176%;
         letter-spacing: 0.04em;
-        color: $color-black
-      
+        color: $color-black;
+        width: 200px;
+       
+      @media screen and (min-width: $tablet) {
+        width: 172px;
+  
+      }
+      @media screen and (min-width: $desktop) {
+        width: 246px;
+        font-size: 16px;
+       
+      }
     }
     
 }
@@ -127,9 +359,9 @@
     background-color: transparent;
     border: none;
     display: block;
-    
-    margin-bottom: 16px;
     margin-top: auto;
+    margin-bottom: 16px;
+    
    
    
     
