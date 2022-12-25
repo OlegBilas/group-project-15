@@ -16,8 +16,8 @@ p {
 	padding: 28px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #FCFCFC;
-border: 2px solid #F8D24E;
+	background: $color-white;
+border: 2px solid $color-yellow;
 border-radius: 10px;
 @media screen and (min-width: 768px) {
 	width: 568px;
@@ -32,7 +32,7 @@ font-size: 16px;
 line-height: calc(24 / 16);
 /* identical to box height, or 150% */
 	text-align: center;
-	color: #131313;
+	color: $color-black;
 	@media screen and (min-width: 768px) {
 		font-size: 20px;
 		line-height: calc(28 / 20);
@@ -80,13 +80,13 @@ margin-bottom: 85px;
 }
 
 .coffee {
-	background: #EFD478;
-border: 2px solid #EFD478;
+	background: $color-yellow-light;
+border: 2px solid $color-yellow-light;
 box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
 
 .milkshake {
-	border: 2px solid #D6936D;
+	border: 2px solid $color-orange;
 filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 border-radius: 15.7808px;
 }
@@ -103,8 +103,8 @@ border-radius: 98px;
 	position: absolute;
 	left: 0px;
 	top: -68px;
-	width: 132px;
-height: 132px;
+// 	width: 132px;
+// height: 132px;
 border-radius: 50%;
 overflow: hidden;
 
@@ -125,7 +125,7 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 
-color: #131313;
+color: $color-black;
 }
 
 .ice-cream {
@@ -178,7 +178,7 @@ padding-right: 12px;
 	margin-left: auto;
 	margin-right: auto;
 background: rgba(248, 210, 78, 0.1);
-border: 1px solid #84A178;
+border: 1px solid $color-green;
 border-radius: 10px;
 font-family: 'Montserrat';
 font-style: normal;
@@ -186,7 +186,7 @@ font-weight: 400;
 font-size: 12px;
 line-height: 140%;
 /* or 17px */
-color: #131313;
+color: $color-black;
 @media screen and (min-width: 768px) {
 	width: 368px;
 height: 84px;
@@ -211,9 +211,9 @@ font-weight: 400;
 font-size: 12px;
 line-height: 140%;
 /* or 17px */
-color: #131313;
+color: $color-black;
 background: rgba(248, 210, 78, 0.1);
-border: 1px solid #84A178;
+border: 1px solid $color-green;
 border-radius: 10px;
 @media screen and (min-width: 768px) {
 	width: 368px;
@@ -232,8 +232,8 @@ font-size: 12px;
 line-height: calc(15 / 12);
 text-align: center;
 
-color: #131313;
-background: #F8D24E;
+color: $color-black;
+background: $color-yellow;
 border-radius: 10px;
 border: 0;
 @media screen and (min-width: 768px) {
