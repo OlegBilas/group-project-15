@@ -111,6 +111,9 @@
     fill: $color-white;
     transition: fill $time-duration $timing-function;
   }
+  @media screen and (min-width:$tablet) {
+    margin-right: 30px;
+  }
 }
 .social-icon__link {
   fill: $color-green;
