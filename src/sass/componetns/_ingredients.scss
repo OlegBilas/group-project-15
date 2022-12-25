@@ -188,6 +188,10 @@
             border: 1px solid $color-green-for-btn;
             cursor: pointer;
         }
+
+        &:not(:placeholder-shown):required:invalid {
+            background-color: coral;
+        }
     }
 }
 
