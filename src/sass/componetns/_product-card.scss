@@ -13,7 +13,7 @@ p {
 .product-modal {
 	position: relative;
 	width: 280px;
-	padding: 28px;
+	padding: 26px;
 	margin-left: auto;
 	margin-right: auto;
 	background: $color-white;
@@ -23,6 +23,7 @@ border-radius: 10px;
 // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 768px) {
 	width: 568px;
+	padding: 32px;
 }
 }
 
@@ -107,7 +108,6 @@ border-radius: 98px;
 	top: -7px;
 border-radius: 50%;
 overflow: hidden;
-
 }
 
 .product-modal__name {
@@ -191,11 +191,11 @@ color: $color-black;
 	width: 368px;
 height: 84px;
 font-size: 14px;
+margin-bottom: 32px;
 }
 }
 
 .product-form__input {
-	resize: none;
 	width: 224px;
 height: 32px;
 padding-top: 8px;
@@ -219,6 +219,7 @@ border-radius: 10px;
 	width: 368px;
 height: 42px;
 font-size: 14px;
+margin-bottom: 16px;
 }
 }
 
