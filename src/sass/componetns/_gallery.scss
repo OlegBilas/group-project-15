@@ -67,6 +67,8 @@
 
 .gallery{
 position: relative;
+
+width: 100%;
     
 @media screen and (max-width: 767px) 
 {
@@ -80,6 +82,28 @@ max-width: 767px;
 }
 
 }  
+
+@media screen and (min-width: 768px) {
+
+  .container {
+
+   max-width: 768px;
+   padding: 0 32px;
+ }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+
+    max-width: 1200px;
+    padding: 0 16px;    
+    }
+  
+}
+
+
 
 
 
