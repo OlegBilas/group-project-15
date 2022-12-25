@@ -80,7 +80,7 @@
 .modal__img {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0px 7px #9CBE8F;
@@ -224,13 +224,16 @@ textarea {
 @media screen and (min-width: 768px) {
     .modal {
         width: 568px;
-        overflow-y: auto;
-        padding: 32px 40px 42px 40px;
+        padding: 32px 0px 42px 0px;
     }
 
     .modal-head {
         min-width: 280px;
         margin-bottom: 24px;
+    }
+
+    .modal__img {
+        margin-bottom: 32px;
     }
 
     .modal-card {
@@ -240,9 +243,9 @@ textarea {
     }
 
     .modal-list {
-        margin-bottom: 48px;
         padding-left: 40px;
         padding-right: 40px;
+        margin-bottom: 48px;
     }
 
     .modal-form {
