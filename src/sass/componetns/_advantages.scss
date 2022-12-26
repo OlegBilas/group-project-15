@@ -1,6 +1,14 @@
 .advantages {
     .container {
         padding: 50px 45px 64px;
+
+        @media screen and (min-width: $tablet) {
+            padding: 60px 76px 204px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding: 60px 16px 178px;
+        }
     }
 }
 
@@ -55,7 +63,12 @@
             @media screen and (max-width: 767px) {
                 margin-bottom: 22px;
             }
+            
+            @media screen and (min-width: $desktop) {
+                margin-right: 32px;
+            }
         }
+
 
         &--explanation {
             font-weight: 700;
@@ -67,10 +80,14 @@
 
             @media screen and (min-width: $tablet) {
                 width: 152px;
+                font-size: 14px;
+                    line-height: 174%;
             }
 
             @media screen and (min-width: $desktop ) {
                 width: 368px;
+                font-size: 16px;
+                line-height: 176%;
             }
         }
 
@@ -88,10 +105,14 @@
             @media screen and (min-width: $tablet) {
                 margin-top: 32px;
                 margin-bottom: 12px;
+                font-size: 48px;
+                line-height: 59px;
             }
 
             @media screen and (min-width: $desktop) {
                 margin-top: 40px;
+                font-size: 58px;
+                line-height: 71px;
             }
         }
     }
