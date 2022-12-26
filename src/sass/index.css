@@ -398,7 +398,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 420px;
-  max-width: 280px;
+  width: 100%;
   background-color: #aec6a5;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -488,5 +488,5 @@ img {
   border: none;
   display: block;
   margin-top: auto;
-  margin-bottom: 16px;
+  padding: 16px;
 }/*# sourceMappingURL=index.css.map */
