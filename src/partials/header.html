@@ -1,5 +1,105 @@
 <header class="section">
-  <div class="container">
-    
+  <!-- Header -->
+
+  <div class="header-nav container">
+    <!-- Main navigation -->
+    <nav class="nav-menu">
+      <a href="index.html" class="logo">
+        <picture>
+          <source
+            srcset="
+              ../src/images/logo/logo-desk.png    1x,
+              ../src/images/logo/logo-desk-2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../src/images/logo/logo-tab.png    1x,
+              ../src/images/logo/logo-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../src/images/logo/logo-mob.png    1x,
+              ../src/images/logo/logo-mob-2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="../src/images/logo/logo-mob.png"
+            alt="Logo Company"
+            class="nav-menu-photo"
+            width="48"
+            height="44"
+          />
+        </picture>
+      </a>
+
+      <button
+        class="nav-mobile-btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="nav-mobile-btn__style"
+          width="20"
+          height="20"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use href="../src/images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button
+          class="nav-mobile-btn js-close-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="nav-mobile-btn__style"
+            width="20"
+            height="20"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use href="../src/images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="./index.html" class="nav-list__link">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#made" class="nav-list__link">How it’s made?</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#products" class="nav-list__link">Our products</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#contacts" class="nav-list__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-menu__btn-in">
+          <button type="button" class="nav-menu__btn">
+            Buy now
+            <svg class="nav-menu__svg" width="12" height="12">
+              <use href="../src/images/icons.svg#icon-more"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="nav-menu__btn-out">
+        <button type="button" class="nav-menu__btn">
+          Buy now
+          <svg class="nav-menu__svg" width="12" height="12">
+            <use href="../src/images/icons.svg#icon-more"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
   </div>
 </header>
