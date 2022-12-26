@@ -221,7 +221,6 @@ img {
   width: 200px;
   height: 200px;
   background-image: url(/src/images/products/icecream.jpg);
-  z-index: 999;
   border-radius: 50%;
   top: -100px;
   left: 50%;
@@ -260,7 +259,6 @@ img {
   height: 200px;
   top: -151px;
   background-image: url(/src/images/products/icelatte.jpg);
-  z-index: 999;
   border-radius: 50%;
   top: -100px;
   left: 50%;
@@ -298,7 +296,6 @@ img {
   width: 200px;
   height: 200px;
   background-image: url(/src/images/products/ice.jpg);
-  z-index: 999;
   border-radius: 50%;
   top: -100px;
   left: 50%;
