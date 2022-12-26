@@ -80,7 +80,7 @@
 
         @media screen and (min-width: $desktop) {
                 color: $color-yellow;
-                cursor: url(/src/images/cursor/vector.png), auto;
+                // cursor: url(/src/images/cursor/vector.png), auto;
             }
 
     }
@@ -186,7 +186,6 @@ text-align: center;
 
 &:hover,
 &:focus {
-        cursor: pointer;
         background-color: $color-green-for-btn;  
         transition: background-color $time-duration $timing-function;
         outline: none;

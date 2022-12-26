@@ -4,8 +4,14 @@ body {
   font-family: 'Montserrat', 'Seymour One', sans-serif;
   font-size: 14px;
   color: $color-black;
-  background-color: $color-green;
+  background-color: $color-green;         
 }
+
+
+a, button {
+cursor: url(/src/images/cursor/vector.png), auto;
+}
+
 
 h1,
 h2,
