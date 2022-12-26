@@ -1,13 +1,18 @@
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 
 .reviews {
+  
   padding-bottom: 393px;
+  padding-top: 180px;
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 379px;
+    padding-top: 290px;
+
   }
   @media screen and (min-width: $desktop) {
     padding-bottom: 228px;
+    padding-top: 380px;
   }
 }
 
