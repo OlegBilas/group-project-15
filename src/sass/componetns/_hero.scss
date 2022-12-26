@@ -90,6 +90,9 @@
 
     cursor: pointer;
 
+    transition: border $time-duration $timing-function,
+                color $time-duration $timing-function;
+
     &:hover {
         border: 2px solid $color-green-for-btn;
     }
@@ -121,6 +124,8 @@
 
     color: $color-yellow;
     outline: none;
+
+    transition: color $time-duration $timing-function;
 
     &:hover {
         color: $color-green-for-btn;
@@ -190,6 +195,18 @@
 
     @media screen and (min-width: $tablet) {
         display: flex;
+
+        animation: spin 20s backwards linear infinite;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
