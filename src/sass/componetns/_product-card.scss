@@ -224,7 +224,7 @@ margin-bottom: 16px;
 }
 
 .product-form__input:not(:placeholder-shown):required:valid {
-	border-color: green;
+	border-color: blue;
 }
 
 .product-form__input:not(:placeholder-shown):required:invalid {
