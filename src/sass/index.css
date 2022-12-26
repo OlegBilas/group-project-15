@@ -398,7 +398,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 420px;
-  width: 100%;
+  width: 280px;
   background-color: #aec6a5;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -408,11 +408,6 @@ img {
 }
 .products-list:last-child {
   background-color: #d6936d;
-}
-@media screen and (min-width: 480px) {
-  .products-list {
-    width: 280px;
-  }
 }
 @media screen and (min-width: 768px) {
   .products-list {
