@@ -4,7 +4,7 @@
   @media screen and (mim-width: $mobile) {
     max-width: 480px;
   }
-  & h2 {
+  &-title {
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 30px;
@@ -27,7 +27,7 @@
       margin-bottom: 303px;
     }
   }
-  & p {
+  &-description {
     padding-bottom: 12px;
     text-align: center;
     font-family: 'Montserrat';
@@ -243,7 +243,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 420px;
+  min-height: 420px;
   width: 100%;
 
   background-color: #aec6a5;
@@ -291,27 +291,30 @@
       padding-bottom: 66px;
     }
   }
+}
+.products-list_description {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: $color-black;
 
-  & p {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 176%;
-    letter-spacing: 0.04em;
-    color: $color-black;
-    width: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
 
-    @media screen and (min-width: $tablet) {
-      width: 172px;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 246px;
-      font-size: 16px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 61px;
+    padding-right: 63px;
+    font-size: 16px;
   }
 }
 .products-list_icon-arrow_icon-arrow {
@@ -323,6 +326,5 @@
   border: none;
   display: block;
   margin-top: auto;
- 
   padding: 16px;
 }

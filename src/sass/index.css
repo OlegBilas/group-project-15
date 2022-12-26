@@ -150,7 +150,7 @@ img {
     max-width: 480px;
   }
 }
-.products h2 {
+.products-title {
   font-family: "Seymour One";
   font-weight: 400;
   font-size: 30px;
@@ -162,20 +162,20 @@ img {
   margin-bottom: 148px;
 }
 @media screen and (min-width: 768px) {
-  .products h2 {
+  .products-title {
     font-size: 34px;
     line-height: 43px;
     margin-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products h2 {
+  .products-title {
     font-size: 36px;
     line-height: 45px;
     margin-bottom: 303px;
   }
 }
-.products p {
+.products-description {
   padding-bottom: 12px;
   text-align: center;
   font-family: "Montserrat";
@@ -187,7 +187,7 @@ img {
   color: #131313;
 }
 @media screen and (min-width: 1200px) {
-  .products p {
+  .products-description {
     font-size: 30px;
     line-height: 37px;
   }
@@ -397,7 +397,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 420px;
+  min-height: 420px;
   width: 100%;
   background-color: #aec6a5;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
@@ -453,7 +453,8 @@ img {
     padding-bottom: 66px;
   }
 }
-.products-list p {
+
+.products-list_description {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -464,16 +465,19 @@ img {
   line-height: 176%;
   letter-spacing: 0.04em;
   color: #131313;
-  width: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 @media screen and (min-width: 768px) {
-  .products-list p {
-    width: 172px;
+  .products-list_description {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products-list p {
-    width: 246px;
+  .products-list_description {
+    padding-left: 61px;
+    padding-right: 63px;
     font-size: 16px;
   }
 }
