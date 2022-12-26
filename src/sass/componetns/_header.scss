@@ -3,27 +3,32 @@
 }
 
 .nav-menu-photo {
-    @media screen and (max-width: $tablet - 1px) {
+    @media screen and (max-width: calc($tablet - 1px)) {
     width: 40px;
+    height: 37px;
  }
     @media screen and (min-width: $tablet) {
     width: 48px;
+    height: 44px;
  }
     @media screen and (min-width: $desktop) {
     width: 60px;
+    height: 65px;
  }
 }
 
 .nav-menu {
     @include flexCenter();
 
-    @media screen and (min-width: 120px) and (max-width: 768px) {
+    @media screen and (min-width: 120px) and (max-width: 767px) {
     justify-content: space-between;
     padding-top: 12px;
     }
 
  @media screen and (max-width: 1199px) {
-     padding-top: 24px;
+     padding-top: 20px;
+    justify-content: space-between;
+
  }
 
 }
@@ -31,6 +36,7 @@
 .header-nav {
     @media screen and (min-width: $desktop) {
         display: flex;
+        padding-top: 8px;
     }
 }
 
@@ -74,6 +80,7 @@
 
         @media screen and (min-width: $desktop) {
                 color: $color-yellow;
+                // cursor: url(/src/images/cursor/vector.png), auto;
             }
 
     }
@@ -179,7 +186,6 @@ text-align: center;
 
 &:hover,
 &:focus {
-        cursor: pointer;
         background-color: $color-green-for-btn;  
         transition: background-color $time-duration $timing-function;
         outline: none;
@@ -205,7 +211,7 @@ text-align: center;
     }
 
     @media screen and (min-width: $tablet) {
-        margin-left: 36px;
+        margin-left: 32px;
         margin-right: 0;
     }
 
@@ -219,8 +225,8 @@ text-align: center;
 // =====================================================//
 
 .nav-mobile-btn {
-    min-height: 20px;
-    min-width: 20px;
+    min-height: 32px;
+    min-width: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,7 +270,7 @@ text-align: center;
 
    @media (min-width: 767px) and (max-width: 1199px) {
 
-     margin-left: 444px;
+     margin-left: 440px;
  }
 }
 
