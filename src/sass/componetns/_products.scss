@@ -1,9 +1,11 @@
 .products {
-  padding-top: 60px;
-  padding-bottom: 60px;
   @media screen and (mim-width: $mobile) {
     max-width: 480px;
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
   &-title {
     font-family: 'Seymour One';
     font-weight: 400;
@@ -67,7 +69,7 @@
   height: 200px;
 
   background-image: url(/src/images/products/icecream.jpg);
-  z-index: 999;
+  
   border-radius: 50%;
   top: -100px;
   left: 50%;
@@ -102,7 +104,7 @@
   top: -151px;
 
   background-image: url(/src/images/products/icelatte.jpg);
-  z-index: 999;
+
   border-radius: 50%;
   top: -100px;
   left: 50%;
@@ -136,7 +138,7 @@
   height: 200px;
 
   background-image: url(/src/images/products/ice.jpg);
-  z-index: 999;
+
   border-radius: 50%;
   top: -100px;
   left: 50%;
