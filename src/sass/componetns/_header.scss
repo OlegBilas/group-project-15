@@ -237,7 +237,7 @@ text-align: center;
     outline: none;
 }
 
-@media (min-width: 1199px) {
+@media (min-width: $desktop) {
     .nav-mobile-btn {
         display: none;
     }
@@ -268,7 +268,7 @@ text-align: center;
     fill: $color-white;
     cursor: pointer;
 
-   @media (min-width: 767px) and (max-width: 1199px) {
+   @media (min-width: $tablet) and (max-width: 1199px) {
 
      margin-left: 440px;
  }
