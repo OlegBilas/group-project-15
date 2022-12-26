@@ -3,7 +3,7 @@
 }
 
 .nav-menu-photo {
-    @media screen and (max-width: $tablet - 1px) {
+    @media screen and (max-width: calc($tablet - 1px)) {
     width: 40px;
     height: 37px;
  }
@@ -272,7 +272,6 @@ text-align: center;
    @media (min-width: 767px) and (max-width: 1199px) {
 
      margin-left: 440px;
-    //  margin-right: 32px;
  }
 }
 
