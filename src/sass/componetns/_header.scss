@@ -1,279 +1,263 @@
 .logo {
-    z-index: 999;
+  z-index: 999;
 }
 
 .nav-menu-photo {
-    @media screen and (max-width: calc($tablet - 1px)) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     width: 40px;
     height: 37px;
- }
-    @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $tablet) {
     width: 48px;
     height: 44px;
- }
-    @media screen and (min-width: $desktop) {
+  }
+  @media screen and (min-width: $desktop) {
     width: 60px;
     height: 65px;
- }
+  }
 }
 
 .nav-menu {
-    @include flexCenter();
+  @include flexCenter();
 
-    @media screen and (min-width: 120px) and (max-width: 767px) {
+  @media screen and (min-width: 120px) and (max-width: 767px) {
     justify-content: space-between;
     padding-top: 12px;
-    }
+  }
 
- @media screen and (max-width: 1199px) {
-     padding-top: 20px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 20px;
     justify-content: space-between;
-
- }
-
+  }
 }
 
 .header-nav {
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        padding-top: 8px;
-    }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding-top: 8px;
+  }
 }
 
 .nav-list {
-    @media screen and (max-width: 768px) {
-        margin-bottom: 110px;
-    }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 110px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        @include flexCenter();
-        margin-left: 310px;
-        margin-top: 30px;
-    }
-
+  @media screen and (min-width: $desktop) {
+    @include flexCenter();
+    margin-left: 310px;
+    margin-top: 30px;
+  }
 }
 
-
 .nav-list__link {
-    display: block;
-    font-family: 'Montserrat';
-    font-style: normal;
-    color: $color-white;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.2;
-    position: relative;
-    @extend %nodecor;
-    @extend %transition;
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  color: $color-white;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  position: relative;
+  @extend %nodecor;
+  @extend %transition;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 48px;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-black;
+
+    @media screen and (min-width: $desktop) {
+      color: $color-yellow;
+      // cursor: url(/src/images/cursor/vector.png), auto;
     }
-
-          @media screen and (min-width: $desktop) {
-              font-size: 16px;
-          }
-
-    &:hover,
-    &:focus {
-        color: $color-black;
-
-        @media screen and (min-width: $desktop) {
-                color: $color-yellow;
-                // cursor: url(/src/images/cursor/vector.png), auto;
-            }
-
-    }
+  }
 }
 
 .nav-list__item:not(:last-child) {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 32px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
 
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 40px;
-    }
-         @media screen and (min-width: $desktop) {
-            margin-right: 28px;
-         }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 28px;
+  }
 }
 
 // =========================Menu Mobile Button=====================================================================================//
 .menu-button {
-    display: inline-flex;
-    padding: 0;
-    border: none;
-    position: relative;
-    z-index: 2;
-    overflow-y: scroll;
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  position: relative;
+  z-index: 2;
+  overflow-y: scroll;
 
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-
-
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .button-menu {
-    display: none;
+  display: none;
 }
 
 .menu-button.is-open .button-menu {
-    display: block;
-
+  display: block;
 }
 
 .menu-button.is-open .button-cross {
-    display: none;
+  display: none;
 }
 
 .menu-container {
+  text-align: center;
 
-text-align: center;
+  &.is-open {
+    z-index: 1000;
+    display: block;
+    transform: translateX(0);
+  }
 
-    &.is-open {
-            display: block;
-            transform: translateX(0);
-        }
+  @media screen and (max-width: 1199px) {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px 32px 0 32px;
+    background: $color-green;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+    overflow: auto;
+    transform: translateX(-101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    @media screen and (max-width: 1199px) {
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 100px 32px 0 32px;
-        background: $color-green;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-        overflow: auto;
-        transform: translateX(-101%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    align-items: center;
+    padding: 140px 192px 0 192px;
+  }
 
-
-    @media screen and (min-width: $tablet) {
-        justify-content: center;
-        align-items: center;
-        padding: 140px 192px 0 192px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        padding: 0;
-    }
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+  }
 }
-
-
 
 // ==================== Mob menu buttom ==============//
 
 .nav-menu__btn {
-    font-family: 'Montserrat';
-        font-style: normal;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.2;
-        width: 152px;
-        height: 42px;
-        border-radius: 10px;
-        border: none;
-        border-color: transparent;
-        background-color: $color-yellow;
-        color: $color-deep-black;
+  font-family: "Montserrat";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  border-color: transparent;
+  background-color: $color-yellow;
+  color: $color-deep-black;
 
+  &:hover,
+  &:focus {
+    background-color: $color-green-for-btn;
+    transition: background-color $time-duration $timing-function;
+    outline: none;
+  }
 
-&:hover,
-&:focus {
-        background-color: $color-green-for-btn;  
-        transition: background-color $time-duration $timing-function;
-        outline: none;
-}
-
-&:focus {
-        color: $color-white;
-        fill: $color-white;
-        
-}
+  &:focus {
+    color: $color-white;
+    fill: $color-white;
+  }
 }
 
 .nav-menu__btn-in {
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
-
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .nav-menu__btn-out {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-    @media screen and (min-width: $tablet) {
-        margin-left: 32px;
-        margin-right: 0;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-left: 32px;
+    margin-right: 0;
+  }
 
-    @media screen and (min-width: $desktop) {
-        margin-left: 205px;
-        margin-top: auto;
-    }
-
+  @media screen and (min-width: $desktop) {
+    margin-left: 205px;
+    margin-top: auto;
+  }
 }
 
 // =====================================================//
 
 .nav-mobile-btn {
-    min-height: 32px;
-    min-width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    outline: none;
+  min-height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 @media (min-width: $desktop) {
-    .nav-mobile-btn {
-        display: none;
-    }
+  .nav-mobile-btn {
+    display: none;
+  }
 }
 
 .nav-mobile-btn:hover,
 .nav-mobile-btn:focus {
-    fill: $color-black;
+  fill: $color-black;
 }
 
 .menu-container .menu-toggle {
-    position: absolute;
-    top: 30px;
-    right: 16px;
-    color: $color-white;
+  position: absolute;
+  top: 30px;
+  right: 16px;
+  color: $color-white;
 }
 
-
 .menu-container .nav-mobile-btn {
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    color: $color-white;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  color: $color-white;
 }
 
 .nav-mobile-btn__style {
-    @extend %transition;
-    fill: $color-white;
-    cursor: pointer;
+  @extend %transition;
+  fill: $color-white;
+  cursor: pointer;
 
-   @media (min-width: $tablet) and (max-width: 1199px) {
-
-     margin-left: 440px;
- }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 440px;
+  }
 }
 
 .nav-mobile-btn__style:hover {
-    fill: $color-black;
+  fill: $color-black;
 }
