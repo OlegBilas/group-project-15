@@ -124,7 +124,7 @@
   text-align: center;
 
   &.is-open {
-    z-index: 1000;
+    z-index: 100;
     display: block;
     transform: translateX(0);
   }
