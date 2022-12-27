@@ -1,5 +1,100 @@
-<section class="section">
-  <div class="container">
+<section class="hero section" id="home">
+  <div class="hero__container container">
+    <div class="hero__main-info">
+      <div class="hero__title-wrapper">
+        <h1 class="hero__title">ice cream made with
+          <span class="hero__title--passion">passion</span>
+        </h1>
+
+        <div class="hero__btns">
+          <a href="#products" class="hero__product-link">Products</a>
+          <a href="#made" class="hero__about-link">How it’s made?</a>
+        </div>
+      </div>
+
+    <div class="hero__filias-wrapper">
+      <ul class="hero__filias-list">
+        <li class="hero__filias-item">
+          <p class="hero__filias-number">16</p>
+          <p class="hero__filias-type">cafes</p>
+        </li>
+        <li class="hero__filias-item">
+          <p class="hero__filias-number">23</p>
+          <p class="hero__filias-type">food trucks</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero__info-wrapper">
+    <picture class="hero__icecream-dish">
+      <source
+      media="(min-width: 1200px)"
+      srcset="./images/hero/icecream-dish_desk@1x.png, ./images/hero/icecream-dish_desk@2x.png 2x"
+      type="image/png">
+  
+      <source
+      media="(min-width: 768px)"
+      srcset="./images/hero/icecream-dish_tabl@1x.png, ./images/hero/icecream-dish_tabl@2x.png 2x"
+      type="image/png">
+  
+      <img
+      class="img"
+      src="./images/hero/icecream-dish_tabl@1x.png"
+      alt="dots">
+    </picture>
+    <p class="hero__info">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      <svg class="hero__icon">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </p>
     
+  </div>
+
+
+    <picture class="hero__dots">
+      <source
+      media="(min-width: 1200px)"
+      srcset="./images/hero/dots_desk@1x.png 1x, ./images/hero/dots_desk@2x.png 2x"
+      type="image/png">
+
+      <source
+      media="(min-width: 768px)"
+      srcset="./images/hero/dots_tabl@1x.png 1x, ./images/hero/dots_tabl@2x.png 2x"
+      type="image/png">
+
+      <source
+      media="(min-width: 480px)"
+      srcset="./images/hero/dots_mob@1x.png 1x, ./images/hero/dots_mob@2x.png 2x"
+      type="image/png">
+
+      <img
+      class="img"
+      src="./images/hero/dots_mob@1x.png"
+      alt="dots">
+    </picture>
+
+      <picture class="hero__icecream">
+        <source
+        media="(min-width: 1200px)"
+        srcset="./images/hero/icecream_desk@1x.png 1x, ./images/hero/icecream_desk@2x.png 2x"
+        type="image/png">
+
+        <source
+        media="(min-width: 768px)"
+        srcset="./images/hero/icecream_tabl@1x.png 1x, ./images/hero/icecream_tabl@2x.png 2x"
+        type="image/png">
+
+        <source
+        media="(min-width: 480px)"
+        srcset="./images/hero/icecream_mob@1x.png 1x, ./images/hero/icecream_mob@2x.png 2x"
+        type="image/png">
+
+        <img
+        class="img"
+        src="./images/hero/icecream_mob@1x.png"
+        alt="icecream">
+    </picture>
   </div>
 </section>
