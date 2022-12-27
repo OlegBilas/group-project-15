@@ -1,8 +1,35 @@
+.gallery {
+
+  margin-top: 50px;
+  height: 130px;
+  margin-bottom: -130px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 280px;
+    height: 100px;
+     }
+
+  @media screen and (min-width: 768px) {
+      max-width: 704px;
+      height: 327px;
+      margin-bottom: -281px;
+    }
+  @media screen and (min-width: 1200px) {
+  max-width: 1013px;
+  height: 422px;
+  margin-bottom: -356px;
+}
+}
+
 .gallery__item {
+  
   margin-left: auto;
   margin-right: auto;
+  width: 280px;
+  height: 100%;  
 
   position: absolute;
+  transform: translateY(-32px);
 
   border-radius: 24px;
 
@@ -22,17 +49,27 @@
   &:nth-child(3) {
     animation-delay: 7s;
   }
-  @media screen and (max-width: 767px) {
-    transform: translateY(-32px);
+  @media screen and (min-width: 480px) {
+  transform: translateY(-64px);
+  
   }
 
   @media screen and (min-width: 768px) {
-    transform: translateY(-144px);
+    transform: translateY(-98px);
+    width: 704px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {
-    transform: translateY(-98px);
+    transform: translateY(-32px);
+    width: 1013px;
+    height: 100%;
+    margin-right: auto;
+      margin-left: auto;
   }
+
 }
 
 @keyframes myImgAnimation {
@@ -59,36 +96,31 @@
 
 .section-gallery {
   padding-top: 0;
-  padding-bottom: 0;
+  
+  position: relative;
+  
 }
 
-.gallery {
-  position: relative;
 
-  width: 100%;
-  //height: 100%;
-
-  @media screen and (max-width: 767px) {
-    max-width: 767px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 1199px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+.container {
+  padding: 0 20px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+   
+    padding: 0 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+
     padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-    padding: 0 16px;
+      padding: 0 93px;
   }
 }
