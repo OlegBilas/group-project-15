@@ -1,6 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
+
   font-family: "Montserrat", "Seymour One", sans-serif;
+
   font-size: 14px;
   color: #131313;
   background-color: #84A178;
@@ -42,6 +44,7 @@ img {
   margin: -1px;
 }
 
+
 .backgroung-ice-cream {
   background-repeat: no-repeat;
   background-position: center;
@@ -74,6 +77,7 @@ img {
   }
 }
 
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -91,6 +95,52 @@ img {
     padding: 0 16px;
   }
 }
+
+
+.product-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 609px;
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .product-modal {
+    width: 297px;
+  }
+}
+@media screen and (width: 1200px) {
+  .product-modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.close-sign {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.icon-close {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #000000;
+  cursor: pointer;
 
 .backdrop {
   position: fixed;
@@ -542,4 +592,5 @@ img {
   display: block;
   margin-top: auto;
   padding: 16px;
+
 }/*# sourceMappingURL=index.css.map */
