@@ -5,19 +5,17 @@
       <li class="product-modal__card cream">
         <div class="product-modal__item">
           <div class="product-modal__bg ice-cream">
-            <div>
-              <img
-                class="product-modal__photo"
-                srcset="
-                  ./images/Product-card/img1_132.jpg 1x,
-                  ./images/Product-card/img1_264.jpg 2x
-                "
-                src="./images/Product-card/img1_264.jpg"
-                alt="ice cream"
-                width="132"
-                height="132"
-              />
-            </div>
+            <img
+              class="product-modal__photo"
+              srcset="
+                ./images/Product-card/img1_132.jpg 1x,
+                ./images/Product-card/img1_264.jpg 2x
+              "
+              src="./images/Product-card/img1_264.jpg"
+              alt="ice cream"
+              width="132"
+              height="132"
+            />
           </div>
         </div>
         <div>
@@ -77,30 +75,30 @@
         />
       </div>
 
-      <div class="product-form__block">
-        <input
-          type="tel"
-          name="tel"
-          required
-          pattern="+380[0-9]{2}-[0-9]{7}"
-          minlength="14"
-          maxlength="16"
-          title="Введіть номер телефону у форматі +380##-#######"
-          id="tel"
-          class="product-form__input"
-          placeholder="Phone"
-        />
-      </div>
+      <!-- <div class="product-form__block"> -->
+      <input
+        type="tel"
+        name="tel"
+        required
+        pattern="+380[0-9]{2}-[0-9]{7}"
+        minlength="14"
+        maxlength="16"
+        title="Введіть номер телефону у форматі +380##-#######"
+        id="tel"
+        class="product-form__input"
+        placeholder="Phone"
+      />
+      <!-- </div> -->
 
-      <div class="product-form__block">
-        <textarea
-          name="comment"
-          id="comment"
-          rows="8"
-          placeholder="Comment"
-          class="product-form__text"
-        ></textarea>
-      </div>
+      <!-- <div class="product-form__block"> -->
+      <textarea
+        name="comment"
+        id="comment"
+        rows="8"
+        placeholder="Comment"
+        class="product-form__text"
+      ></textarea>
+      <!-- </div> -->
 
       <button type="submit" class="product-form__submit">Submit</button>
     </form>
