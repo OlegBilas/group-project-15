@@ -1,67 +1,99 @@
 <div class="backdrop is-hidden" data-modal>
-  <div class="product-modal">
-    <p class="product-modal__title">Buy now</p>
-    <ul class="list product-modal__gallary">
-      <li class="product-modal__card cream">
-        <div class="product-modal__item">
-          <div class="product-modal__bg ice-cream">
-            <img
-              class="product-modal__photo"
-              srcset="
-                ./images/Product-card/img1_132.jpg 1x,
-                ./images/Product-card/img1_264.jpg 2x
-              "
-              src="./images/Product-card/img1_264.jpg"
-              alt="ice cream"
-              width="132"
-              height="132"
-            />
-          </div>
+  <form class="product-form" name="form" autocomplete="off">
+    <div class="product-modal">
+      <p class="product-modal__title">Buy now</p>
+      <div
+        role="group"
+        aria-labelledby="ice-cream products"
+        class="product-modal__gallary"
+      >
+        <div class="product-modal__input-set">
+          <input
+            type="checkbox"
+            class="product-modal_input visially-hidden"
+            id="cream"
+            name="ice-cream"
+            value="cream"
+          />
+          <label class="product-modal__card cream" for="cream">
+            <div class="product-modal__item">
+              <div class="product-modal__bg ice-cream">
+                <img
+                  class="product-modal__photo"
+                  srcset="
+                    ./images/Product-card/img1_132.jpg 1x,
+                    ./images/Product-card/img1_264.jpg 2x
+                  "
+                  src="./images/Product-card/img1_264.jpg"
+                  alt="ice cream"
+                  width="132"
+                  height="132"
+                />
+              </div>
+            </div>
+            <div>
+              <p class="product-modal__name">ice cream</p>
+            </div>
+          </label>
         </div>
-        <div>
-          <p class="product-modal__name">ice cream</p>
-        </div>
-      </li>
 
-      <li class="product-modal__card coffee">
-        <div class="product-modal__item">
-          <div class="product-modal__bg ice-coffee">
-            <img
-              class="product-modal__photo"
-              srcset="
-                ./images/Product-card/img2_132.jpg 1x,
-                ./images/Product-card/img2_264.jpg 2x
-              "
-              src="./images/Product-card/img2_264.jpg"
-              alt="ice coffee"
-              width="132"
-              height="132"
-            />
-          </div>
+        <div class="product-modal__input-set">
+          <input
+            type="checkbox"
+            class="product-modal_input visially-hidden"
+            id="coffee"
+            name="ice-cream"
+            value="coffee"
+          />
+          <label class="product-modal__card coffee" for="coffee">
+            <div class="product-modal__item">
+              <div class="product-modal__bg ice-coffee">
+                <img
+                  class="product-modal__photo"
+                  srcset="
+                    ./images/Product-card/img2_132.jpg 1x,
+                    ./images/Product-card/img2_264.jpg 2x
+                  "
+                  src="./images/Product-card/img2_264.jpg"
+                  alt="ice coffee"
+                  width="132"
+                  height="132"
+                />
+              </div>
+            </div>
+            <p class="product-modal__name">ice coffee</p>
+          </label>
         </div>
-        <p class="product-modal__name">ice coffee</p>
-      </li>
 
-      <li class="product-modal__card milkshake">
-        <div class="product-modal__item">
-          <div class="product-modal__bg milk">
-            <img
-              class="product-modal__photo"
-              srcset="
-                ./images/Product-card/img3_132.jpg 1x,
-                ./images/Product-card/img3_264.jpg 2x
-              "
-              src="./images/Product-card/img3_264.jpg"
-              alt="milkshake"
-              width="132"
-              height="132"
-            />
-          </div>
+        <div class="product-modal__input-set">
+          <input
+            type="checkbox"
+            class="product-modal_input visially-hidden"
+            id="milkshake"
+            name="ice-cream"
+            value="milkshake"
+          />
+          <label class="product-modal__card milkshake" for="milkshake">
+            <div class="product-modal__item">
+              <div class="product-modal__bg milk">
+                <img
+                  class="product-modal__photo"
+                  srcset="
+                    ./images/Product-card/img3_132.jpg 1x,
+                    ./images/Product-card/img3_264.jpg 2x
+                  "
+                  src="./images/Product-card/img3_264.jpg"
+                  alt="milkshake"
+                  width="132"
+                  height="132"
+                />
+              </div>
+            </div>
+            <p class="product-modal__name">milkshake</p>
+          </label>
         </div>
-        <p class="product-modal__name">milkshake</p>
-      </li>
-    </ul>
-    <form class="product-form" name="form" autocomplete="off">
+      </div>
+      <!-- <form class="product-form" name="form" autocomplete="off"> -->
       <div class="product-form__block">
         <input
           type="text"
@@ -73,38 +105,38 @@
           class="product-form__input"
           placeholder="Name"
         />
+
+        <!-- <div class="product-form__block"> -->
+        <input
+          type="tel"
+          name="tel"
+          required
+          pattern="+380[0-9]{2}-[0-9]{7}"
+          minlength="14"
+          maxlength="16"
+          title="Введіть номер телефону у форматі +380##-#######"
+          id="tel"
+          class="product-form__input"
+          placeholder="Phone"
+        />
+        <!-- </div> -->
+
+        <!-- <div class="product-form__block"> -->
+        <textarea
+          name="comment"
+          id="comment"
+          rows="8"
+          placeholder="Comment"
+          class="product-form__text"
+        ></textarea>
+        <!-- </div> -->
+        <button type="submit" class="product-form__submit">Submit</button>
       </div>
-
-      <!-- <div class="product-form__block"> -->
-      <input
-        type="tel"
-        name="tel"
-        required
-        pattern="+380[0-9]{2}-[0-9]{7}"
-        minlength="14"
-        maxlength="16"
-        title="Введіть номер телефону у форматі +380##-#######"
-        id="tel"
-        class="product-form__input"
-        placeholder="Phone"
-      />
-      <!-- </div> -->
-
-      <!-- <div class="product-form__block"> -->
-      <textarea
-        name="comment"
-        id="comment"
-        rows="8"
-        placeholder="Comment"
-        class="product-form__text"
-      ></textarea>
-      <!-- </div> -->
-
-      <button type="submit" class="product-form__submit">Submit</button>
-    </form>
-
-    <svg class="product-modal__close" width="20" height="20">
-      <use href="./images/icons.svg#icon-clarity_close-line"></use>
-    </svg>
-  </div>
+      <button type="button" class="product-modal__close">
+        <svg width="20" height="20">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </form>
 </div>
