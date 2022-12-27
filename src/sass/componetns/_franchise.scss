@@ -50,7 +50,7 @@
     border: 2px solid $color-yellow;
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
-    transition: transform 250ms ease-in, scale 250ms ease-in, opacity 250ms ease-in;
+    transition: transform $time-duration $timing-function, scale $time-duration $timing-function, opacity $time-duration $timing-function;
 
 
   @media screen and (max-width: 767px) {
@@ -118,6 +118,7 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid $color-green;
     border-radius: 10px;
+            transition: border-color $time-duration $timing-function;
     
 
     &:hover {
@@ -136,6 +137,7 @@
     border: 1px solid $color-green;
     border-radius: 10px;
     resize: none;
+        transition: border-color $time-duration $timing-function;
 
     &:hover {
         border-color: $color-yellow;
@@ -157,7 +159,9 @@
 }
 
 .franchise-form__button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     margin-top: 24px;
     width: 114px;
@@ -172,6 +176,7 @@
     font-size: 14px;
     line-height: 1.1;
     text-align: center;
+    transition: background-color $time-duration $timing-function;
 
     color: $color-black;
 
