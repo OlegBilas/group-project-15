@@ -41,6 +41,10 @@
   /* identical to box height, or 150% */
   text-align: center;
   color: $color-black;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 83px;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: calc(28 / 20);
@@ -78,7 +82,7 @@
   width: 132px;
   height: 136px;
   border-radius: 15px;
-  margin-bottom: 85px;
+  //margin-bottom: 85px;
   transition: box-shadow $time-duration $timing-function;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
