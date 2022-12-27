@@ -23,7 +23,7 @@
 .franchise-modal {
     margin: 0 auto;
     max-height: 100vh;
-    
+    overflow: auto;
     position: absolute;
     padding: 28px;
     left: 50%;
@@ -37,16 +37,18 @@
     opacity: 1;
     transition: transform 250ms ease-in, scale 250ms ease-in, opacity 250ms ease-in;
 
-    @media screen and (max-width: 1199px) {
-    max-width: 100vw;
-    // height: 609px;
-  } 
 
-  @media screen and (min-width: 1200px) {
-    padding: 32px 60px;
-    width: 568px;
-    // height: 668px;
-  } 
+  @media screen and (max-width: 767px) {
+      width: 280px;
+      height: 674px;
+      padding: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+      width: 568px;
+      height: 668px;
+      padding: 32px 60px;
+  }
 }
 
 .modal__close-button {
@@ -63,7 +65,83 @@
 
 }
 
-.modal__submit-button {
+.franchise-form__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 24px;
+
+    color: #131313;
+}
+
+.franchise-form__text {
+    margin-bottom: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+
+    color: #131313;
+}
+
+.franchise-form__field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.franchise-form__input {
+    padding-left: 16px;
+    margin: 0 auto;
+    width: 100%;
+    height: 42px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    
+
+    &:hover {
+        border-color: #F8D24E;
+    }
+}
+
+.franchise-form__textarea {
+    padding-left: 16px;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 100%;
+    height: 84px;
+    
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    resize: none;
+
+    &:hover {
+        border-color: #F8D24E;
+    }
+    
+}
+
+.form__icon {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+}
+
+.form__label {
+    padding-bottom: 4px;
+    position: absolute;
+    left: 50px;
+    top: 11px;
+}
+
+.franchise-form__button {
     display: block;
     margin: 0 auto;
     margin-top: 24px;
@@ -81,11 +159,11 @@
     text-align: center;
 
     color: #131313;
-    
+
     &:hover {
         background-color: #0A8817;
-        }
-    
+    }
+
     &:focus {
         background-color: #0A8817;
         color: #FCFCFC;
@@ -93,75 +171,47 @@
     }
 }
 
-.franchise__title {
-    font-family: 'Seymour One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.4;
-        text-align: center;
 
-        margin-bottom: 24px;
-    
-        color: #131313;
-}
+// .modal.active {
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translate(-50%, -50%);
+// }
 
-.form__text {
-    margin-bottom: 32px;
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.4;
-    
-    
-        color: #131313;
-}
+// .modal {
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: transform var(--main-animation), visibility var(--main-animation), opacity var(--main-animation);
+//     z-index: 30;
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -200%);
+// }
 
-.form__field {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    margin-bottom: 12px;
-}
+// .franchise-modal {
+//     width: 280px;
+//     max-height: 100%;
+//     background-color: var(--main-light);
+//     border: 2px solid var(--accent-color);
+//     border-radius: 10px;
+//     padding: 28px;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     overflow: auto;
+//     transform: translate(-50%, -50%);
 
-.form__input {
-    padding-left: 60px;
-    margin: 0 auto;
-    width: 368px;
-        height: 42px;
-        left: 100px;
-        top: 420px;
-    
-        background: rgba(248, 210, 78, 0.1);
-        border: 1px solid #84A178;
-        border-radius: 10px;
-}
+//     @media screen and (max-width: 1199px) {
+//         &.franchise-modal {
+//             max-width: 100vw;
+//         }
+//     }
 
-.form__input-area {
-    width: 368px;
-    height: 84px;
-    
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    margin: 0 auto;
-    resize: none;
-    padding-left: 50px;
-    padding-top: 10px;
-}
-
-.form__icon {
-    position: absolute;
-    left: 13px;
-    top: 50%;
-}
-
-.form__label {
-    padding-bottom: 4px;
-    position: absolute;
-    left: 50px;
-    top: 11px;
-}
-
-
+//     @media screen and (min-width: 1200px) {
+//         &.franchise-modal {
+//         width: 568px;
+//         padding: 32px 60px;
+//         }
+//     }
+// }

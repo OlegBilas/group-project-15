@@ -252,9 +252,10 @@
     margin-right: 18px;
 }
 
-.btm-padding {
+.marginb{
     @media screen and (min-width: 768px) and (max-width:1199px) {
         margin-bottom: 30px;
+        display: inline-block;
     }
         
     
