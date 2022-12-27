@@ -10,10 +10,6 @@
   @media screen and (min-width: $tablet) {
     display: flex;
   }
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    padding: 0;
-  }
 }
 
 .footer-words__first {
@@ -158,9 +154,11 @@
   border-right-style: none;
   border-bottom-style: none;
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    max-width: calc(1200px - (2*12px));
     margin: 0 auto;
+    padding-bottom: 12px;
   }
+
 }
 
 .footer-copyright__text {
@@ -179,7 +177,10 @@
   @media screen and (min-width: $desktop) {
     font-size: 12px;
     line-height: 1.85;
+    margin: 0;
+    padding-top: 12px;
   }
+  
 }
 
 .footer-copyright__text br {
