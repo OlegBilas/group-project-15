@@ -1,14 +1,18 @@
-.products-main{
+.product-modal {
+  overflow-y: scroll;
+}
+
+.products-main {
   padding-top: 60px;
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 .products {
   @media screen and (mim-width: $mobile) {
     max-width: 480px;
   }
-  
+
   &-title {
-    font-family: 'Seymour One';
+    font-family: "Seymour One";
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
@@ -33,7 +37,7 @@
   &-description {
     margin-bottom: 12px;
     text-align: center;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -64,13 +68,13 @@
   }
 }
 .products-list::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 200px;
   height: 200px;
 
   background-image: url(/src/images/products/icecream.jpg);
-  
+
   border-radius: 50%;
   top: -100px;
   left: 50%;
@@ -98,7 +102,7 @@
   }
 }
 .products-list:nth-child(2n)::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 200px;
   height: 200px;
@@ -133,7 +137,7 @@
   }
 }
 .products-list:last-child::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 200px;
   height: 200px;
@@ -168,7 +172,7 @@
 }
 
 .products-list_before-icecream::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 200px;
   height: 200px;
@@ -192,7 +196,7 @@
   }
 }
 .products-list_before-latte::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 200px;
   height: 200px;
@@ -217,7 +221,7 @@
   }
 }
 .products-list_before-milk::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 200px;
   height: 200px;
@@ -258,7 +262,7 @@
   &:last-child {
     background-color: #d6936d;
   }
-  
+
   @media screen and (min-width: $tablet) {
     min-height: 428px;
     min-width: 224px;
@@ -269,7 +273,7 @@
   }
 
   & h3 {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -297,7 +301,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
