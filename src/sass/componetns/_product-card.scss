@@ -28,11 +28,10 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     // max-height: 991px;
     max-height: 100%;
   }
-
 
   @media screen and (min-width: 768px) {
     width: 568px;
@@ -41,7 +40,7 @@
 }
 
 .product-modal__title {
-  font-family: 'Seymour One';
+  font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -95,14 +94,24 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
-  .product-modal_input:checked + & {
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  .product-modal_input:checked + &.cream {
+    box-shadow: rgba(150, 175, 140, 0.4) 0px 0px 0px 2px,
+      rgba(150, 175, 140, 0.65) 0px 4px 6px -1px,
+      rgba(150, 175, 140, 0.08) 0px 1px 0px inset;
+  }
+  .product-modal_input:checked + &.coffee {
+    box-shadow: rgba(239, 212, 120, 0.4) 0px 0px 0px 2px,
+      rgba(239, 212, 120, 0.65) 0px 4px 6px -1px,
+      rgba(239, 212, 120, 0.08) 0px 1px 0px inset;
+  }
+  .product-modal_input:checked + &.milkshake {
+    box-shadow: rgba(214, 147, 109, 0.4) 0px 0px 0px 2px,
+      rgba(214, 147, 109, 0.65) 0px 4px 6px -1px,
+      rgba(214, 147, 109, 0.08) 0px 1px 0px inset;
   }
 }
 .cream {
-  border: 2px solid #96af8c;
+  border: 2px solid rgb(150, 175, 140);
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 }
 
@@ -138,7 +147,7 @@
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -183,7 +192,8 @@
 }
 
 .product-modal__card:not(:last-child) {
-  margin-bottom: 21x;}
+  margin-bottom: 21x;
+}
 
 .product-modal__card:last-child {
   margin-bottom: 31px;
@@ -223,7 +233,7 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $color-green;
   border-radius: 10px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -248,7 +258,7 @@
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -279,7 +289,7 @@
 .product-form__submit {
   width: 114px;
   height: 42px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
