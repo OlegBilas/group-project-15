@@ -4,24 +4,24 @@ margin-left: auto;
       margin-top: 50px;
       height: 130px;
       
-      transform: translateY(90px);
+      transform: translateY(-29px);
 
   @media screen and (min-width: 480px) {
       max-width: 280px;
       height: 100px;
-      transform: translateY(70px);
+      
      }
 
   @media screen and (min-width: 768px) {
       max-width: 704px;
       height: 327px;
-      transform: translateY(200px);
+      transform: translateY(-144px);
      
     }
   @media screen and (min-width: 1200px) {
       max-width: 1013px;
       height: 422px;
-      transform: translateY(350px);
+      transform: translateY(-98px);
 }
 }
 
@@ -101,21 +101,36 @@ margin-left: auto;
 
 .container-gallery {
       padding: 0 20px;
-}
+    background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1600px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../images/backgroud-mobile.jpg);
+      
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../images/backgroud-mobile.jpg);
+        
+    }
+
 @media screen and (min-width: 480px) {
   .container-gallery {
       padding: 0 20px;
+   
   }
 }
 
 @media screen and (min-width: 768px) {
   .container-gallery {
       padding: 0 32px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../images/backgroud-tablet.jpg);
+    
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../images/backgroud-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container-gallery {
       padding: 0 93px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../images/backgroud-desktop.jpg);
+    
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../images/backgroud-desktop.jpg);
   }
 }
