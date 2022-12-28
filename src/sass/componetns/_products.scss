@@ -31,7 +31,7 @@
     }
   }
   &-description {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
@@ -279,17 +279,17 @@
     text-transform: uppercase;
 
     color: $color-black;
-    padding-bottom: 40px;
-    padding-top: 123px;
+    margin-bottom: 40px;
+    margin-top: 123px;
     @media screen and (min-width: $tablet) {
       font-size: 22px;
       line-height: 27px;
     }
     @media screen and (min-width: $desktop) {
-      padding-top: 197px;
+      margin-top: 197px;
       font-size: 30px;
       line-height: 37px;
-      padding-bottom: 66px;
+      margin-bottom: 66px;
     }
   }
 }
