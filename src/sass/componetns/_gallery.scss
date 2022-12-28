@@ -2,6 +2,7 @@
   // margin-right: auto;
   // margin-left: auto;
   // margin-top: 50px;
+
   height: 130px;
 
   transform: translateY(-29px);
@@ -24,9 +25,10 @@
 }
 
 .gallery__item {
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 280px;
+  width: 100%;
   height: 100%;
   position: absolute;
 
@@ -48,23 +50,23 @@
   &:nth-child(3) {
     animation-delay: 7s;
   }
-  @media screen and (min-width: 480px) {
-    margin-right: auto;
-    margin-left: auto;
-  }
+  // @media screen and (min-width: 480px) {
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
 
   @media screen and (min-width: 768px) {
     width: 704px;
     height: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1013px;
     height: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
   }
 }
 
