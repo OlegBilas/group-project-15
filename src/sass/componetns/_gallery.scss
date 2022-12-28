@@ -1,9 +1,10 @@
 .gallery {
-  // margin-right: auto;
-  // margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
   // margin-top: 50px;
 
   height: 130px;
+  max-width: 280px;
 
   transform: translateY(-29px);
 
@@ -13,12 +14,12 @@
   // }
 
   @media screen and (min-width: 768px) {
-    // max-width: 704px;
+    max-width: 704px;
     height: 327px;
     transform: translateY(-144px);
   }
   @media screen and (min-width: 1200px) {
-    // max-width: 1013px;
+    max-width: 1013px;
     height: 422px;
     transform: translateY(-98px);
   }
