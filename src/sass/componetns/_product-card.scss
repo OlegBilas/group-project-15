@@ -82,41 +82,28 @@
 }
 .product-modal__card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  display: inline-block;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  // align-items: center;
   width: 132px;
   height: 136px;
   border-radius: 15px;
-  margin-bottom: 0px;
+
+  // margin-bottom: 0px;
   transition: box-shadow $time-duration $timing-function;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-  .product-modal_input:checked + &.cream {
-    box-shadow: rgba(150, 175, 140, 0.4) 0px 0px 0px 2px,
-      rgba(150, 175, 140, 0.65) 0px 4px 6px -1px,
-      rgba(150, 175, 140, 0.08) 0px 1px 0px inset;
-  }
-  .product-modal_input:checked + &.coffee {
-    box-shadow: rgba(239, 212, 120, 0.4) 0px 0px 0px 2px,
-      rgba(239, 212, 120, 0.65) 0px 4px 6px -1px,
-      rgba(239, 212, 120, 0.08) 0px 1px 0px inset;
-  }
-  .product-modal_input:checked + &.milkshake {
-    box-shadow: rgba(214, 147, 109, 0.4) 0px 0px 0px 2px,
-      rgba(214, 147, 109, 0.65) 0px 4px 6px -1px,
-      rgba(214, 147, 109, 0.08) 0px 1px 0px inset;
-  }
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 0;
+  // }
 }
 .cream {
-  border: 2px solid rgb(150, 175, 140);
+  border: 2px solid #96af8c;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 }
 
 .coffee {
-  background: $color-yellow-light;
+  //background: $color-yellow-light;
   border: 2px solid $color-yellow-light;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
@@ -144,9 +131,22 @@
 }
 
 .product-modal__name {
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 95px;
+  padding-bottom: 20px;
+
+  // margin-left: auto;
+  // margin-right: auto;
+  display: block;
+  border-radius: 15px;
+  .product-modal__card.cream .product-modal_input:checked + & {
+    background-color: #96af8c66;
+  }
+  .product-modal__card.coffee .product-modal_input:checked + & {
+    background-color: $color-yellow;
+  }
+  .product-modal__card.milkshake .product-modal_input:checked + & {
+    background-color: $color-orange;
+  }
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;

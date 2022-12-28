@@ -1,99 +1,81 @@
 <div class="backdrop is-hidden" data-buy-in data-buy-out>
   <form class="product-modal" name="product-order" autocomplete="off">
-    <!-- <div> -->
     <p class="product-modal__title">Buy now</p>
-    <div
-      role="group"
-      aria-labelledby="ice-cream products"
-      class="product-modal__gallary"
-    >
-      <div class="product-modal__input-set">
+    <div role="group" class="product-modal__gallary">
+      <div class="product-modal__card cream">
+        <div class="product-modal__bg ice-cream">
+          <img
+            class="product-modal__photo"
+            srcset="
+              ./images/Product-card/img1_132.jpg 1x,
+              ./images/Product-card/img1_264.jpg 2x
+            "
+            src="./images/Product-card/img1_264.jpg"
+            alt="ice cream"
+            width="132"
+            height="132"
+          />
+        </div>
         <input
           type="checkbox"
           class="product-modal_input visially-hidden"
-          id="cream"
           name="ice-cream"
           value="cream"
+          id="cream"
         />
-        <label class="product-modal__card cream" for="cream">
-          <div class="product-modal__item">
-            <div class="product-modal__bg ice-cream">
-              <img
-                class="product-modal__photo"
-                srcset="
-                  ./images/Product-card/img1_132.jpg 1x,
-                  ./images/Product-card/img1_264.jpg 2x
-                "
-                src="./images/Product-card/img1_264.jpg"
-                alt="ice cream"
-                width="132"
-                height="132"
-              />
-            </div>
-          </div>
-          <div>
-            <p class="product-modal__name">ice cream</p>
-          </div>
-        </label>
+        <label class="product-modal__name" for="cream">ice cream </label>
       </div>
 
-      <div class="product-modal__input-set">
+      <div class="product-modal__card coffee">
+        <div class="product-modal__bg ice-coffee">
+          <img
+            class="product-modal__photo"
+            srcset="
+              ./images/Product-card/img2_132.jpg 1x,
+              ./images/Product-card/img2_264.jpg 2x
+            "
+            src="./images/Product-card/img2_264.jpg"
+            alt="ice coffee"
+            width="132"
+            height="132"
+          />
+        </div>
         <input
           type="checkbox"
           class="product-modal_input visially-hidden"
-          id="coffee"
           name="ice-cream"
           value="coffee"
+          id="coffee"
         />
-        <label class="product-modal__card coffee" for="coffee">
-          <div class="product-modal__item">
-            <div class="product-modal__bg ice-coffee">
-              <img
-                class="product-modal__photo"
-                srcset="
-                  ./images/Product-card/img2_132.jpg 1x,
-                  ./images/Product-card/img2_264.jpg 2x
-                "
-                src="./images/Product-card/img2_264.jpg"
-                alt="ice coffee"
-                width="132"
-                height="132"
-              />
-            </div>
-          </div>
-          <p class="product-modal__name">ice coffee</p>
-        </label>
+        <label class="product-modal__name" for="coffee">ice coffee </label>
       </div>
 
-      <div class="product-modal__input-set">
+      <div class="product-modal__card milkshake">
+        <div class="product-modal__bg milk">
+          <img
+            class="product-modal__photo"
+            srcset="
+              ./images/Product-card/img3_132.jpg 1x,
+              ./images/Product-card/img3_264.jpg 2x
+            "
+            src="./images/Product-card/img3_264.jpg"
+            alt="milkshake"
+            width="132"
+            height="132"
+          />
+        </div>
+
         <input
           type="checkbox"
           class="product-modal_input visially-hidden"
-          id="milkshake"
           name="ice-cream"
           value="milkshake"
+          id="milkshake"
         />
-        <label class="product-modal__card milkshake" for="milkshake">
-          <div class="product-modal__item">
-            <div class="product-modal__bg milk">
-              <img
-                class="product-modal__photo"
-                srcset="
-                  ./images/Product-card/img3_132.jpg 1x,
-                  ./images/Product-card/img3_264.jpg 2x
-                "
-                src="./images/Product-card/img3_264.jpg"
-                alt="milkshake"
-                width="132"
-                height="132"
-              />
-            </div>
-          </div>
-          <p class="product-modal__name">milkshake</p>
-        </label>
+        <label class="product-modal__name" for="milkshake">milkshake </label>
       </div>
     </div>
-    <!-- <form class="product-form" name="form" autocomplete="off"> -->
+
     <div class="product-form__block">
       <input
         type="text"
@@ -106,7 +88,6 @@
         placeholder="Name"
       />
 
-      <!-- <div class="product-form__block"> -->
       <input
         type="tel"
         name="tel"
@@ -119,9 +100,7 @@
         class="product-form__input"
         placeholder="Phone"
       />
-      <!-- </div> -->
 
-      <!-- <div class="product-form__block"> -->
       <textarea
         name="comment"
         id="comment"
@@ -129,18 +108,13 @@
         placeholder="Comment"
         class="product-form__text"
       ></textarea>
-      <!-- </div> -->
+
       <button type="submit" class="product-form__submit">Submit</button>
     </div>
-    <button
-      type="button"
-      class="product-modal__close"
-      data-close-buy-in
-    >
+    <button type="button" class="product-modal__close" data-close-buy-in>
       <svg width="20" height="20">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <!-- </div> -->
   </form>
 </div>
