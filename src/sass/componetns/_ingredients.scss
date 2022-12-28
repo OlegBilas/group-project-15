@@ -13,7 +13,7 @@
     pointer-events: none;
     transition: opacity $time-duration $timing-function;
 
-    & .modal {
+    & .modal-ing {
       transform: translate(-50%, -50%);
     }
   }
@@ -229,7 +229,7 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-ing {
     width: 568px;
     padding: 32px 0px 42px 0px;
   }
@@ -258,5 +258,10 @@ textarea {
   .modal-form {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .btn-close__icone {
+    width: 24px;
+    height: 24px;
   }
 }
