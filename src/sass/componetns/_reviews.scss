@@ -2,15 +2,15 @@
 
 .reviews {
   padding-bottom: 393px;
-  padding-top: 180px;
+  padding-top: 51px;
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 379px;
-    padding-top: 290px;
+    padding-top: 0px;
   }
   @media screen and (min-width: $desktop) {
     padding-bottom: 228px;
-    padding-top: 380px;
+    padding-top: 42px;
   }
 }
 
