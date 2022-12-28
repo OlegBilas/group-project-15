@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-buy-in data-buy-out>
   <form class="product-modal" name="product-order" autocomplete="off">
     <!-- <div> -->
     <p class="product-modal__title">Buy now</p>
@@ -132,7 +132,11 @@
       <!-- </div> -->
       <button type="submit" class="product-form__submit">Submit</button>
     </div>
-    <button type="button" class="product-modal__close">
+    <button
+      type="button"
+      class="product-modal__close"
+      data-close-buy-in
+    >
       <svg width="20" height="20">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
