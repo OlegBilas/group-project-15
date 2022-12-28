@@ -4,13 +4,25 @@
 
 .footer {
   background-color: $color-green;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 12px;
+  }
 }
 
 .footer-list {
+  padding-bottom: 40px;
   @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
+
+.footer-list__text {
+  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
+}
+
 
 .footer-words__first {
   color: $color-white;
@@ -47,7 +59,7 @@
   line-height: 1.205;
   letter-spacing: 0.04em;
 
-  margin-bottom: 60px;
+  
   max-width: 200px;
   text-transform: uppercase;
   @media screen and (min-width: $tablet) {
@@ -55,25 +67,25 @@
     line-height: 1.22;
     max-width: 352px;
     letter-spacing: 0.06em;
-    margin-bottom: 32px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 58px;
     line-height: 1.23;
     letter-spacing: 0.06em;
     max-width: 100%;
-    margin-bottom: 60px;
+    
   }
 }
 
 .contacts-list {
   @media screen and (min-width: $tablet) {
-    margin-top: 61px;
+    padding-top: 61px;
     margin-left: auto;
   }
   @media screen and (min-width: $desktop) {
     margin-left: auto;
     margin-top: 18px;
+    padding: 0;
   }
 }
 .contacts-list__socials {
@@ -125,7 +137,7 @@
   font-size: 12px;
   line-height: 1.83;
   text-align: right;
-  margin-bottom: 40px;
+  
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.85;
@@ -148,15 +160,23 @@
   }
 }
 
+.footer-copyright {
+  @media screen and (min-width:$desktop) {
+   margin: 0 auto;
+  }
+}
+
 .line {
   border: 1px solid #e1e1e1;
   border-left-style: none;
   border-right-style: none;
   border-bottom-style: none;
+ 
   @media screen and (min-width: $desktop) {
-    max-width: calc(1200px - (2*12px));
+    max-width: calc(1200px - (2*16px));
     margin: 0 auto;
-    padding-bottom: 12px;
+    align-items: center;
+    justify-content: center;
   }
 
 }
@@ -168,17 +188,17 @@
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  margin: 20px 0;
+  padding: 20px 0;
   @media screen and (min-width: $tablet) {
     line-height: 1.85;
     letter-spacing: 0.02em;
-    margin: 12px auto;
+    padding: 12px 0;
   }
   @media screen and (min-width: $desktop) {
     font-size: 12px;
     line-height: 1.85;
-    margin: 0;
-    padding-top: 12px;
+    margin-top: 12px;
+    padding: 0;
   }
   
 }
