@@ -228,10 +228,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
-
-
+    z-index: 2;
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
@@ -247,23 +244,17 @@
     width: 95%;
     height: 95%;
     max-height: 459px;
-    top: 200%;
-    left: 2%
 
     }
 
     @media screen  and (min-width: $tablet) and (max-width: 1199px) {
             max-height: 459px;
             max-width: 568px;
-            top: 100%;
-            left: 15%;
         }
 
 @media screen and (min-width: $desktop) {
     max-width: 568px;
     max-height: 449px;
-// top: 145%;
-// left: 25%;
 }
 
 
