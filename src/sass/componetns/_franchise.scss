@@ -1,188 +1,188 @@
 .overlay {
+  opacity: 0;
+  visibility: hidden;
 
-    opacity: 0;
-    visibility: hidden;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 20;
-    transition: .3s all;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
 }
 
 .modal {
-    
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    z-index: 30;
-    transition: transform $time-duration $timing-function, scale $time-duration $timing-function, opacity $time-duration $timing-function;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 30;
+  transition: transform $time-duration $timing-function,
+    scale $time-duration $timing-function,
+    opacity $time-duration $timing-function;
 }
 
 .modal.active,
 .overlay.active {
-    opacity: 1;
-    visibility: visible;
-    
+  opacity: 1;
+  visibility: visible;
 }
 
 .franchise-modal {
-    margin: 0 auto;
-    max-height: 100%;
-    overflow: auto;
-    background-color:$color-white;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border: 2px solid $color-yellow;
-
+  margin: 0 auto;
+  max-height: 100%;
+  overflow: auto;
+  background-color: $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 2px solid $color-yellow;
 
   @media screen and (max-width: 767px) {
-      min-width: 280px;
-      padding: 28px;
+    min-width: 280px;
+    padding: 28px;
   }
 
   @media screen and (min-width: $tablet) {
-      width: 568px;
-      padding: 32px 60px;
+    width: 568px;
+    padding: 32px 60px;
   }
 }
 
 .modal__close-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
 
+  &:hover > .modal__icon-close,
+  &:focus > .modal__icon-close {
+    fill: $color-green-for-btn;
+  }
 }
 
 .franchise-form__title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 24px;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 24px;
 
-    color: $color-black;
+  color: $color-black;
 }
 
 .franchise-form__text {
-    margin-bottom: 32px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.4;
+  margin-bottom: 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
 
-    color: $color-black;
+  color: $color-black;
 }
 
 .franchise-form__field {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    margin-bottom: 12px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 12px;
 }
 
 .franchise-form__input {
-    padding-left: 16px;
-    margin: 0 auto;
-    width: 100%;
-    height: 42px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid $color-green;
-    border-radius: 10px;
-    transition: border-color $time-duration $timing-function;
-    
+  padding-left: 16px;
+  margin: 0 auto;
+  width: 100%;
+  height: 42px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid $color-green;
+  border-radius: 10px;
+  transition: border-color $time-duration $timing-function;
 
-    &:focus,
-    &:hover {
-            border: 1px solid $color-green-for-btn;
-            // cursor: pointer;
-    }
-    
-    &:not(:placeholder-shown):required:invalid {
-        background-color: coral;
-    }
+  &:focus,
+  &:hover {
+    border: 1px solid $color-green-for-btn;
+    // cursor: pointer;
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    background-color: coral;
+  }
 }
 
 .franchise-form__textarea {
-    padding-left: 16px;
-    padding-top: 10px;
-    margin: 0 auto;
-    width: 100%;
-    height: 84px;
-    
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid $color-green;
-    border-radius: 10px;
-    resize: none;
-    transition: border-color $time-duration $timing-function;
+  padding-left: 16px;
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 100%;
+  height: 84px;
 
-    &:focus,
-    &:hover {
-        border: 1px solid $color-green-for-btn;
-        // cursor: pointer;
-    }
-    
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid $color-green;
+  border-radius: 10px;
+  resize: none;
+  transition: border-color $time-duration $timing-function;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $color-green-for-btn;
+    // cursor: pointer;
+  }
 }
 
 .form__icon {
-    position: absolute;
-    left: 13px;
-    top: 50%;
+  position: absolute;
+  left: 13px;
+  top: 50%;
 }
 
 .form__label {
-    padding-bottom: 4px;
-    position: absolute;
-    left: 50px;
-    top: 11px;
+  padding-bottom: 4px;
+  position: absolute;
+  left: 50px;
+  top: 11px;
 }
 
 .franchise-form__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 24px;
-    width: 114px;
-    height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 24px;
+  width: 114px;
+  height: 42px;
 
-    background-color: #F8D24E;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.1;
-    text-align: center;
-    transition: background-color $time-duration $timing-function;
+  background-color: #f8d24e;
+  border: none;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  transition: background-color $time-duration $timing-function;
 
-    color: $color-black;
+  color: $color-black;
 
-    &:hover {
-        background-color: $color-green-for-btn;
-    }
+  &:hover {
+    background-color: $color-green-for-btn;
+  }
 
-    &:focus {
-        background-color: $color-green-for-btn;
-        color: $color-white;
-        fill: $color-white;
-    }
+  &:focus {
+    background-color: $color-green-for-btn;
+    color: $color-white;
+    fill: $color-white;
+  }
 }
