@@ -21,6 +21,11 @@
     height: 440px;
     width: 320px;
 
+    @media screen and (min-width: $mobile) {
+        height: 315px;
+        width: $mobile;
+    }
+    
     @media screen and (min-width: $tablet) {
         display: block;
 
@@ -344,6 +349,10 @@
 
     width: 320px;
 
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+        left: 320px;
+    }
+
     @media screen and (min-width: $tablet) {
         width: $tablet;
     }
@@ -361,6 +370,11 @@
     transform: translateX(-50%);
 
     width: 177px;
+
+    @media screen and (min-width: $mobile) {
+        width: 218px;
+        left: 356px;
+    }
 
     @media screen and (min-width: $tablet) {
         width: 268px;
