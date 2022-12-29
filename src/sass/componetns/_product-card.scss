@@ -299,13 +299,14 @@
   position: absolute;
   top: 1%;
   right: 2%;
-  cursor: pointer;
+  // cursor: pointer;
 
   padding: 0;
   border: none;
   background-color: inherit;
 
-  & > svg {
-    fill: $color-black;
+  &:hover > svg,
+  &:focus > svg {
+    fill: $color-green-for-btn;
   }
 }
