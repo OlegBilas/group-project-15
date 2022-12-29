@@ -51,7 +51,7 @@
         padding: 28px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 568px;
         padding: 32px 60px;
     }
@@ -90,7 +90,7 @@
         height: 199px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         height: 260px;
     }
 }
@@ -113,6 +113,7 @@
     text-decoration: none;
     border-radius: 10px;
     margin-top: 32px;
+    transition: background-color $time-duration $timing-function;
 
     &:hover {
         background-color: $color-green-for-btn;
