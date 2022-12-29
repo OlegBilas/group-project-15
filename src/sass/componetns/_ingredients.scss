@@ -19,8 +19,6 @@
   }
 }
 
-
-
 .btn-close {
   position: absolute;
   top: 3px;
@@ -172,7 +170,6 @@
     &:focus,
     &:hover {
       border: 1px solid $color-green-for-btn;
-      cursor: pointer;
     }
 
     &:not(:placeholder-shown):required:invalid {
@@ -198,7 +195,6 @@ textarea {
   &:focus,
   &:hover {
     border: 1px solid $color-green-for-btn;
-    cursor: pointer;
   }
 }
 
@@ -210,8 +206,6 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .modal-ing {
   position: absolute;
@@ -230,7 +224,6 @@ textarea {
   padding: 28px 0px 28px 0px;
 
   transition: transform $time-duration $timing-function;
-
 }
 
 @media screen and (min-width: 768px) {
