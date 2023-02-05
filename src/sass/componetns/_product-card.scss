@@ -15,6 +15,7 @@
 }
 
 .product-modal {
+  overflow: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -198,6 +199,7 @@
 
 .product-modal__name {
   text-align: center;
+  cursor: url(/src/images/cursor/vector.png), pointer;
 }
 
 .product-form__block {
