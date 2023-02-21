@@ -1,4 +1,4 @@
-<header class="section">
+<header id="home" class="section">
   <!-- Header -->
 
   <div class="header-nav container">
@@ -7,24 +7,15 @@
       <a href="index.html" class="logo">
         <picture>
           <source
-            srcset="
-              ../src/images/logo/logo-desk.png    1x,
-              ../src/images/logo/logo-desk-2x.png 2x
-            "
+            srcset="../src/images/logo/logo-desk.png 1x, ../src/images/logo/logo-desk-2x.png 2x"
             media="(min-width: 1200px)"
           />
           <source
-            srcset="
-              ../src/images/logo/logo-tab.png    1x,
-              ../src/images/logo/logo-tab-2x.png 2x
-            "
+            srcset="../src/images/logo/logo-tab.png 1x, ../src/images/logo/logo-tab-2x.png 2x"
             media="(min-width: 768px)"
           />
           <source
-            srcset="
-              ../src/images/logo/logo-mob.png    1x,
-              ../src/images/logo/logo-mob-2x.png 2x
-            "
+            srcset="../src/images/logo/logo-mob.png 1x, ../src/images/logo/logo-mob-2x.png 2x"
             media="(max-width: 767px)"
           />
           <img
@@ -36,11 +27,7 @@
         </picture>
       </a>
 
-      <button
-        class="nav-mobile-btn js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
+      <button class="nav-mobile-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg
           class="nav-mobile-btn__style"
           width="32"
@@ -69,33 +56,21 @@
 
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a href="./index.html" class="nav-list__link mobile-menu-close"
-              >Home</a
-            >
+            <a href="./index.html" class="nav-list__link mobile-menu-close">Home</a>
           </li>
           <li class="nav-list__item">
-            <a href="#made" class="nav-list__link mobile-menu-close"
-              >How it’s made?</a
-            >
+            <a href="#made" class="nav-list__link mobile-menu-close">How it’s made?</a>
           </li>
           <li class="nav-list__item">
-            <a href="#products" class="nav-list__link mobile-menu-close"
-              >Our products</a
-            >
+            <a href="#products" class="nav-list__link mobile-menu-close">Our products</a>
           </li>
           <li class="nav-list__item">
-            <a href="#contacts" class="nav-list__link mobile-menu-close"
-              >Contact</a
-            >
+            <a href="#contacts" class="nav-list__link mobile-menu-close">Contact</a>
           </li>
         </ul>
 
         <div class="nav-menu__btn-in">
-          <button
-            type="button"
-            class="nav-menu__btn mobile-menu-close"
-            data-open-buy-in
-          >
+          <button type="button" class="nav-menu__btn mobile-menu-close" data-open-buy-in>
             Buy now
             <svg class="nav-menu__svg" width="12" height="12">
               <use href="../src/images/icons.svg#icon-more"></use>
@@ -104,11 +79,7 @@
         </div>
       </div>
       <div class="nav-menu__btn-out">
-        <button
-          type="button"
-          class="nav-menu__btn mobile-menu-close"
-          data-open-buy-out
-        >
+        <button type="button" class="nav-menu__btn mobile-menu-close" data-open-buy-out>
           Buy now
           <svg class="nav-menu__svg" width="12" height="12">
             <use href="../src/images/icons.svg#icon-more"></use>

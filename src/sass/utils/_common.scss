@@ -1,11 +1,11 @@
-@import "~node_modules/modern-normalize/modern-normalize.css";
+@import '~node_modules/modern-normalize/modern-normalize.css';
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Montserrat", "Seymour One", sans-serif;
+  font-family: 'Montserrat', 'Seymour One', sans-serif;
   font-size: 14px;
   color: $color-black;
   background-color: $color-green;
@@ -59,9 +59,7 @@ img {
   // Mobile screen
   background-image: url(../images/backgroud-mobile.jpg);
   // retina mobile screen
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/backgroud-mobile@2x.jpg);
   }
 
@@ -69,9 +67,7 @@ img {
   @media screen and (min-width: $tablet) {
     background-image: url(../images/backgroud-tablet.jpg);
     // retina tablet screen
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/backgroud-tablet@2x.jpg);
     }
   }
@@ -80,9 +76,7 @@ img {
   @media screen and (min-width: $desktop) {
     background-image: url(../images/backgroud-desktop.jpg);
     // retina desktop screen
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/backgroud-desktop@2x.jpg);
     }
   }
@@ -160,4 +154,21 @@ img {
   & svg {
     fill: currentColor;
   }
+}
+.icon-home {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  background-image: url('../images/home-icon.png');
+  background-size: contain;
 }
