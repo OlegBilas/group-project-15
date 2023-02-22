@@ -1,44 +1,43 @@
-.backdrop {
-  overflow-y: scroll;
-  z-index: 110;
-}
+// .backdrop {
+//   overflow-y: scroll;
+//   z-index: 110;
+// }
 
-.backdrop.is-hidden {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .backdrop.is-hidden {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(0, 0, 0, 0.2);
+//   opacity: 1;
+//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
 .product-modal {
-  overflow: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 280px;
-  max-height: 95%;
+  // overflow: auto;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // width: 280px;
+  // max-height: 95%;
   padding: 26px;
   margin-left: auto;
   margin-right: auto;
-  background: $color-white;
-  border: 2px solid $color-yellow;
-  border-radius: 10px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // background: $color-white;
+  // border: 2px solid $color-yellow;
+  // border-radius: 10px;
+  // transform: translate(-50%, -50%) scale(1);
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
-    width: 568px;
+    // width: 568px;
     padding: 32px;
   }
 }
 
 .product-modal__title {
-  font-family: "Seymour One";
-  font-style: normal;
+  font-family: 'Seymour One';
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -136,12 +135,10 @@
   .product-modal__card.milkshake .product-modal_input:checked + & {
     background-color: $color-orange;
   }
-  font-family: "Montserrat";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
 
   text-align: center;
   letter-spacing: 0.04em;
@@ -151,32 +148,17 @@
 }
 
 .ice-cream {
-  background: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .ice-coffee {
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
 .milk {
-  background: linear-gradient(
-      0deg,
-      rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)
-    ),
-    #d9d9d9;
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
@@ -220,8 +202,7 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $color-green;
   border-radius: 10px;
-  font-family: "Montserrat";
-  font-style: normal;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
@@ -245,8 +226,7 @@
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Montserrat";
-  font-style: normal;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
@@ -294,18 +274,18 @@
 //   }
 // }
 
-.product-modal__close {
-  position: absolute;
-  top: 1%;
-  right: 2%;
-  // cursor: pointer;
+// .product-modal__close {
+//   position: absolute;
+//   top: 1%;
+//   right: 2%;
+//   // cursor: pointer;
 
-  padding: 0;
-  border: none;
-  background-color: inherit;
+//   padding: 0;
+//   border: none;
+//   background-color: inherit;
 
-  &:hover > svg,
-  &:focus > svg {
-    fill: $color-green-for-btn;
-  }
-}
+//   &:hover > svg,
+//   &:focus > svg {
+//     fill: $color-green-for-btn;
+//   }
+// }

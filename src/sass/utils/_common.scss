@@ -97,6 +97,7 @@ img {
   }
 }
 
+// Стилі кнопок
 .btn {
   padding: 12px 34px;
 
@@ -156,6 +157,8 @@ img {
     fill: currentColor;
   }
 }
+
+// Кнопка Home
 .icon-home {
   position: fixed;
   right: 30px;
@@ -172,4 +175,76 @@ img {
 
   background-image: url('../images/home-icon.png');
   background-size: contain;
+}
+
+// Стилі бекдропа та модалки
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  // opacity: 1;
+  // visibility: visible;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    // transition: opacity $time-duration $timing-function, visibility $time-duration $timing-function;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  max-height: 100%;
+  overflow-y: auto;
+
+  background-color: $color-white;
+
+  border: 2px solid $color-yellow;
+  border-radius: 10px;
+
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: transform $time-duration $timing-function, opacity $time-duration $timing-function;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0;
+    transition: transform $time-duration $timing-function, opacity $time-duration $timing-function;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: inherit;
+  border: none;
+
+  &:hover > svg,
+  &:focus > svg {
+    fill: $color-green-for-btn;
+    transition: fill $time-duration $timing-function;
+  }
 }

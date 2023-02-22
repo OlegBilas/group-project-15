@@ -12,17 +12,17 @@
 //   transition: 0.3s all;
 // }
 
-.modal {
-  // opacity: 0;
-  // visibility: hidden;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  // z-index: 30;
-  transition: transform $time-duration $timing-function, scale $time-duration $timing-function,
-    opacity $time-duration $timing-function;
-}
+// .modal {
+// opacity: 0;
+// visibility: hidden;
+// position: fixed;
+// top: 50%;
+// left: 50%;
+// transform: translate(-50%, -50%) scale(1);
+// z-index: 30;
+// transition: transform $time-duration $timing-function, scale $time-duration $timing-function,
+//   opacity $time-duration $timing-function;
+// }
 
 // .modal.active,
 // .overlay.active {
@@ -31,47 +31,46 @@
 // }
 
 .franchise-modal {
-  margin: 0 auto;
-  max-height: 100%;
-  overflow: auto;
-  background-color: $color-white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  border: 2px solid $color-yellow;
+  // margin: 0 auto;
+  // max-height: 100%;
+  // overflow: auto;
+  // background-color: $color-white;
+  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  //   0px 2px 1px rgba(0, 0, 0, 0.2);
+  // border-radius: 10px;
+  // border: 2px solid $color-yellow;
 
   @media screen and (max-width: 767px) {
-    min-width: 280px;
+    // min-width: 280px;
     padding: 28px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 568px;
+    // width: 568px;
     padding: 32px 60px;
   }
 }
 
-.modal__close-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
+// .modal__close-button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   top: 0px;
+//   right: 0px;
+//   width: 30px;
+//   height: 30px;
+//   border: none;
+//   background-color: transparent;
 
-  &:hover > .modal__icon-close,
-  &:focus > .modal__icon-close {
-    fill: $color-green-for-btn;
-  }
-}
+//   &:hover > .modal__icon-close,
+//   &:focus > .modal__icon-close {
+//     fill: $color-green-for-btn;
+//   }
+// }
 
 .franchise-form__title {
   font-family: 'Seymour One';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
@@ -83,8 +82,6 @@
 
 .franchise-form__text {
   margin-bottom: 32px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
@@ -165,8 +162,6 @@
   background-color: #f8d24e;
   border: none;
   border-radius: 10px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.1;

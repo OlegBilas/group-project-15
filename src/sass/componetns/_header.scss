@@ -1,5 +1,5 @@
 .logo {
-  z-index: 108;
+  z-index: 8;
 }
 
 .nav-menu-photo {
@@ -52,8 +52,7 @@
 
 .nav-list__link {
   display: block;
-  font-family: "Montserrat";
-  font-style: normal;
+
   color: $color-white;
   font-weight: 700;
   font-size: 32px;
@@ -124,14 +123,14 @@
   text-align: center;
 
   &.is-open {
-    z-index: 100;
+    z-index: 1;
     display: block;
     transform: translateX(0);
   }
 
   @media screen and (max-width: 1199px) {
     position: fixed;
-    z-index: 1;
+    // z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -159,9 +158,6 @@
 // ==================== Mob menu buttom ==============//
 
 .nav-menu__btn {
-  font-family: "Montserrat";
-  font-style: normal;
-  text-decoration: none;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;

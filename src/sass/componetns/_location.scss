@@ -12,16 +12,16 @@
 //   transition: 0.3s all;
 // }
 
-.modal {
-  // opacity: 0;
-  // visibility: hidden;
+// .modal {
+// opacity: 0;
+// visibility: hidden;
 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  // z-index: 30;
-}
+// position: fixed;
+// top: 50%;
+// left: 50%;
+// transform: translate(-50%, -50%);
+// z-index: 30;
+// }
 
 // .modal.active,
 // .overlay.active {
@@ -30,34 +30,33 @@
 // }
 
 .location-modal {
-  max-height: 100%;
+  // max-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
-  background-color: $color-white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  border: 2px solid $color-yellow;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  transition: transform 250ms ease-in, scale 250ms ease-in, opacity 250ms ease-in;
+  // overflow: auto;
+  // background-color: $color-white;
+  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  //   0px 2px 1px rgba(0, 0, 0, 0.2);
+  // border-radius: 10px;
+  // border: 2px solid $color-yellow;
+  // transform: translate(-50%, -50%) scale(1);
+  // opacity: 1;
+  // transition: transform 250ms ease-in, scale 250ms ease-in, opacity 250ms ease-in;
 
   @media screen and (max-width: 767px) {
-    min-width: 280px;
+    // min-width: 280px;
     padding: 28px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 568px;
+    // width: 568px;
     padding: 32px 60px;
   }
 }
 
 .location__title {
   font-family: 'Seymour One';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
@@ -66,23 +65,23 @@
   color: $color-black;
 }
 
-.modal__close-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
+// .modal__close-button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   top: 0px;
+//   right: 0px;
+//   width: 30px;
+//   height: 30px;
+//   border: none;
+//   background-color: transparent;
 
-  &:hover > .modal__icon-close,
-  &:focus > .modal__icon-close {
-    fill: $color-green-for-btn;
-  }
-}
+//   &:hover > .modal__icon-close,
+//   &:focus > .modal__icon-close {
+//     fill: $color-green-for-btn;
+//   }
+// }
 
 .contacts-modal__wrapper {
   margin: 0 auto;
@@ -125,8 +124,6 @@
     fill: $color-white;
   }
 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.1;

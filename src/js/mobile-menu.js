@@ -16,7 +16,7 @@
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('is-open');
       openMenuBtn.classList.toggle('is-open');
-      // bodyScrollLock.enableBodyScroll(document.body);
+      bodyScrollLock.enableBodyScroll(document.body);
     })
   );
   // Close the mobile menu on wider screens if the device orientation changes
@@ -25,6 +25,6 @@
     mobileMenu.classList.remove('is-open');
     openMenuBtn.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    // bodyScrollLock.enableBodyScroll(document.body);
+    bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
