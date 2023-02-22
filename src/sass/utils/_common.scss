@@ -111,6 +111,7 @@ img {
 
   &:focus {
     color: $color-white;
+    outline-style: none;
   }
   // &:focus,
   // &:hover {

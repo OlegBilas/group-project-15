@@ -1,34 +1,16 @@
-!(function (e) {
-  'function' != typeof e.matches &&
-    (e.matches =
-      e.msMatchesSelector ||
-      e.mozMatchesSelector ||
-      e.webkitMatchesSelector ||
-      function (e) {
-        for (
-          var t = this, o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0;
-          o[n] && o[n] !== t;
+/* Універсальний скрипт підключення модальних вікон
+ (обмеження на кількість модалок немає, потрібно тільки їх правильно перенумерувати)
+ На кнопку відкриття модалки задати клас "js-open-modal" та атрибут data-modal="1" (по порядковому номеру)
+ На оверлей задати клас "js-overlay-modal"
+ На модалку задати атрибут data-modal="1" (по порядковому номеру)
+ На кнопку закриття задати клас "js-close-modal"*/
 
-        )
-          ++n;
-        return Boolean(o[n]);
-      }),
-    'function' != typeof e.closest &&
-      (e.closest = function (e) {
-        for (var t = this; t && 1 === t.nodeType; ) {
-          if (t.matches(e)) return t;
-          t = t.parentNode;
-        }
-        return null;
-      });
-})(window.Element.prototype);
-
-// Для блокировки скролла на <body> требуется подключение бибилиотеки bodyScrollLock
-// в тело тега <body>, например: <script src="./js/bodyScrollLock.js"></script>!
+/* Для блокировки скролла на <body> требуется подключение бибилиотеки bodyScrollLock
+ в тело тега <body>, например: <script src="./js/bodyScrollLock.js"></script>*/
 document.addEventListener('DOMContentLoaded', function () {
   // Записываем в переменные массив элементов-кнопок и подложку.
   const modalButtons = document.querySelectorAll('.js-open-modal');
-  // overlaysArr = document.querySelectorAll('.js-overlay-modal'),
+  const overlaysArr = document.querySelectorAll('.js-overlay-modal');
   const closeButtons = document.querySelectorAll('.js-close-modal');
 
   /* Перебираем массив кнопок */
@@ -77,12 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
     false
   );
 
-  // Добавим слушателя на клик по всем оверлеям и установим их скрытие по клику на оверлее
-  // overlaysArr.forEach(item => {
-  //   item.addEventListener('click', function () {
-  //     item.classList.add('is-hidden');
-  //     bodyScrollLock.enableBodyScroll(document.body); // added
-  //   });
-  // });
+  // Добавим слушателя на клик по всем оверлеям и установим их скрытие по клику вне модалки
+  overlaysArr.forEach(item => {
+    item.addEventListener('click', function (e) {
+      if (e.target === e.currentTarget) {
+        item.classList.add('is-hidden');
+        bodyScrollLock.enableBodyScroll(document.body); // added}
+      }
+    });
+  });
 });
 // end ready
