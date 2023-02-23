@@ -187,14 +187,13 @@ img {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
-  // opacity: 1;
-  // visibility: visible;
+
+  transition: opacity $time-duration $timing-function, visibility $time-duration $timing-function;
 
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    // transition: opacity $time-duration $timing-function, visibility $time-duration $timing-function;
   }
 }
 
@@ -218,7 +217,6 @@ img {
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.4);
     opacity: 0;
-    transition: transform $time-duration $timing-function, opacity $time-duration $timing-function;
   }
 
   @media screen and (max-width: 767px) {

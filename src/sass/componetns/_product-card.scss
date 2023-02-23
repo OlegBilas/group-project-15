@@ -30,8 +30,12 @@
   // transform: translate(-50%, -50%) scale(1);
   // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (max-width: 767px) {
+    height: 991px;
+  }
+
   @media screen and (min-width: 768px) {
-    // width: 568px;
+    height: 664px;
     padding: 32px;
   }
 }
@@ -44,11 +48,11 @@
   /* identical to box height, or 150% */
   text-align: center;
   color: $color-black;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     margin-bottom: 83px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: calc(28 / 20);
   }
@@ -59,16 +63,16 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     gap: 83px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
     gap: 32px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
     margin-top: 103px;
   }
@@ -168,13 +172,13 @@
 
 .product-modal__card:last-child {
   margin-bottom: 31px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 0;
   }
 }
 .product-modal__card:first-child {
   // margin-top: 83px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 0;
   }
 }
@@ -208,7 +212,7 @@
   line-height: 140%;
   /* or 17px */
   color: $color-black;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 368px;
     height: 84px;
     font-size: 14px;
@@ -235,7 +239,7 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $color-salad;
   border-radius: 10px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 368px;
     height: 42px;
     font-size: 14px;

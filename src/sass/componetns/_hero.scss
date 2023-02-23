@@ -47,7 +47,7 @@
 .hero__title {
   width: 247px;
 
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-weight: 400;
   font-size: 26px;
   line-height: 33px;
@@ -131,8 +131,7 @@
 
   // cursor: pointer;
 
-  transition: border $time-duration $timing-function,
-    color $time-duration $timing-function;
+  transition: border $time-duration $timing-function, color $time-duration $timing-function;
 
   &:hover {
     border: 2px solid $color-green-for-btn;
@@ -347,7 +346,7 @@
 
   width: 320px;
 
-  @media screen and (min-width: $mobile) and (max-width: 767px) {
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
     left: 320px;
   }
 

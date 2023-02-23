@@ -44,13 +44,13 @@
   // opacity: 1;
   // transition: transform 250ms ease-in, scale 250ms ease-in, opacity 250ms ease-in;
 
-  @media screen and (max-width: 767px) {
-    // min-width: 280px;
+  @media screen and (max-width: $tablet) {
+    max-height: 365px;
     padding: 28px;
   }
 
   @media screen and (min-width: $tablet) {
-    // width: 568px;
+    max-height: 568px;
     padding: 32px 60px;
   }
 }
@@ -87,7 +87,7 @@
   margin: 0 auto;
   width: 100%;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     height: 199px;
   }
 
