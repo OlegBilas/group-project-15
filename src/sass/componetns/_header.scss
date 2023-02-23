@@ -157,30 +157,30 @@
 
 // ==================== Mob menu buttom ==============//
 
-.nav-menu__btn {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2;
-  width: 152px;
-  height: 42px;
-  border-radius: 10px;
-  border: none;
-  border-color: transparent;
-  background-color: $color-yellow;
-  color: $color-deep-black;
+// .nav-menu__btn {
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 1.2;
+//   width: 152px;
+//   height: 42px;
+//   border-radius: 10px;
+//   border: none;
+//   border-color: transparent;
+//   background-color: $color-yellow;
+//   color: $color-deep-black;
 
-  &:hover,
-  &:focus {
-    background-color: $color-green-for-btn;
-    transition: background-color $time-duration $timing-function;
-    outline: none;
-  }
+//   &:hover,
+//   &:focus {
+//     background-color: $color-green-for-btn;
+//     transition: background-color $time-duration $timing-function;
+//     outline: none;
+//   }
 
-  &:focus {
-    color: $color-white;
-    fill: $color-white;
-  }
-}
+//   &:focus {
+//     color: $color-white;
+//     fill: $color-white;
+//   }
+// }
 
 .nav-menu__btn-in {
   @media screen and (min-width: $tablet) {

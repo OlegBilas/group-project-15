@@ -98,13 +98,16 @@ img {
 }
 
 // Стилі кнопок
+// btn - базовий клас ДЛЯ КНОПОК ТА ПОСИЛАНЬ
 .btn {
-  padding: 12px 34px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
-
+  text-decoration: none;
   text-align: center;
   color: $color-deep-black;
 
@@ -114,47 +117,131 @@ img {
     color: $color-white;
     outline-style: none;
   }
-  // &:focus,
-  // &:hover {
-  //   cursor: pointer;
-  // }
+  & svg {
+    fill: currentColor;
+    margin-left: 4px;
+  }
+}
+
+.btn--fill {
+  @extend .btn;
+
+  border: none;
+  background-color: $color-yellow;
+
+  transition: color $time-duration $timing-function,
+    background-color $time-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $color-green-for-btn;
+  }
+  &:disabled {
+    background-color: $color-disabled-btn;
+  }
+}
+
+// для кнопок "Submit", "Open map"
+.submit-btn {
+  @extend .btn--fill;
+  padding-left: 34px;
+  padding-right: 34px;
+  @media screen and (max-width: $tablet) {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
+}
+
+.buy-now-btn {
+  @extend .btn--fill;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.read-more__button {
+  @extend .btn--fill;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.locations-btn {
+  @extend .btn--fill;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  padding-left: 39px;
+  padding-right: 39px;
 }
 
 .btn--stroke {
+  @extend .btn;
   background-color: transparent;
   border: 2px solid $color-yellow;
 
+  transition: color $time-duration $timing-function, border-color $time-duration $timing-function;
   &:hover,
   &:focus {
     border-color: $color-green-for-btn;
   }
+  &:disabled {
+    border-color: $color-disabled-btn;
+  }
 }
 
-.btn--made {
-  padding: 12px 11px 22px 21px;
+.hero__product-link {
+  @extend .btn--stroke;
+
+  width: 134px;
+  padding-left: 36px;
+  padding-right: 36px;
+  @media screen and (max-width: $desktop) {
+    width: 108px;
+    padding: 11px 26px;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    border-radius: 8px;
+  }
+}
+
+.franchise-btn {
+  @extend .btn--stroke;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+}
+
+.hero__about-link {
+  @extend .btn;
+  padding: 12px 22px;
   background-color: transparent;
   border-color: transparent;
   color: $color-yellow;
   text-decoration: underline;
   line-height: calc(17 / 14);
 
+  transition: color $time-duration $timing-function;
+  @media screen and (max-width: $desktop) {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
+
   &:hover {
     color: $color-green-for-btn;
   }
-}
 
-.btn--fill {
-  background-color: $color-yellow;
-  border-color: $color-yellow;
-  border-style: double;
-
-  &:hover,
-  &:focus {
-    background-color: $color-green-for-btn;
-    border-color: $color-green-for-btn;
-  }
-  & svg {
-    fill: currentColor;
+  &:disabled {
+    color: $color-disabled-btn;
   }
 }
 

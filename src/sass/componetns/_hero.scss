@@ -113,77 +113,77 @@
   gap: 12px;
 }
 
-.hero__product-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .hero__product-link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-  padding: 11px 26px;
+//   padding: 11px 26px;
 
-  font-weight: 600;
-  line-height: 18px;
-  text-decoration: none;
+//   font-weight: 600;
+//   line-height: 18px;
+//   text-decoration: none;
 
-  color: $color-black;
-  border: 2px solid $color-yellow;
-  border-radius: 8px;
-  outline: none;
+//   color: $color-black;
+//   border: 2px solid $color-yellow;
+//   border-radius: 8px;
+//   outline: none;
 
-  // cursor: pointer;
+//   // cursor: pointer;
 
-  transition: border $time-duration $timing-function, color $time-duration $timing-function;
+//   transition: border $time-duration $timing-function, color $time-duration $timing-function;
 
-  &:hover {
-    border: 2px solid $color-green-for-btn;
-  }
-  &:focus {
-    border: 2px solid $color-green-for-btn;
-    color: $color-white;
-  }
-  &:disabled {
-    border: 2px solid $color-disabled-btn;
-  }
+//   &:hover {
+//     border: 2px solid $color-green-for-btn;
+//   }
+//   &:focus {
+//     border: 2px solid $color-green-for-btn;
+//     color: $color-white;
+//   }
+//   &:disabled {
+//     border: 2px solid $color-disabled-btn;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    padding: 12px 34px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     padding: 12px 34px;
+//   }
+// }
 
-.hero__about-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .hero__about-link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-  padding: 12px 0;
+//   padding: 12px 0;
 
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  text-decoration: underline;
-  text-align: center;
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 15px;
+//   text-decoration: underline;
+//   text-align: center;
 
-  color: $color-yellow;
-  outline: none;
+//   color: $color-yellow;
+//   outline: none;
 
-  transition: color $time-duration $timing-function;
+//   transition: color $time-duration $timing-function;
 
-  &:hover {
-    color: $color-green-for-btn;
-  }
-  &:focus {
-    color: $color-white;
-  }
-  &:disabled {
-    color: $color-disabled-btn;
-  }
+//   &:hover {
+//     color: $color-green-for-btn;
+//   }
+//   &:focus {
+//     color: $color-white;
+//   }
+//   &:disabled {
+//     color: $color-disabled-btn;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    padding: 12px 22px;
+//   @media screen and (min-width: $desktop) {
+//     padding: 12px 22px;
 
-    font-size: 14px;
-    line-height: 17px;
-  }
-}
+//     font-size: 14px;
+//     line-height: 17px;
+//   }
+// }
 
 .hero__filias-list {
   display: none;

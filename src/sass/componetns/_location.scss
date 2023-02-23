@@ -86,6 +86,7 @@
 .contacts-modal__wrapper {
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 32px;
 
   @media screen and (max-width: $tablet) {
     height: 199px;
@@ -101,33 +102,33 @@
   width: 100%;
 }
 
-.modal-locations__link {
-  width: 145px;
-  height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-yellow;
-  margin: 0 auto;
-  text-decoration: none;
-  border-radius: 10px;
-  margin-top: 32px;
-  transition: background-color $time-duration $timing-function;
+// .modal-locations__link {
+//   width: 145px;
+//   height: 42px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: $color-yellow;
+//   margin: 0 auto;
+//   text-decoration: none;
+//   border-radius: 10px;
+//   margin-top: 32px;
+//   transition: background-color $time-duration $timing-function;
 
-  &:hover {
-    background-color: $color-green-for-btn;
-  }
+//   &:hover {
+//     background-color: $color-green-for-btn;
+//   }
 
-  &:focus {
-    background-color: $color-green-for-btn;
-    color: $color-white;
-    fill: $color-white;
-  }
+//   &:focus {
+//     background-color: $color-green-for-btn;
+//     color: $color-white;
+//     fill: $color-white;
+//   }
 
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.1;
-  text-align: center;
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 1.1;
+//   text-align: center;
 
-  color: $color-black;
-}
+//   color: $color-black;
+// }
