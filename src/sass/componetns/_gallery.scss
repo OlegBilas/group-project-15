@@ -1,17 +1,11 @@
 .gallery {
   margin-right: auto;
   margin-left: auto;
-  // margin-top: 50px;
 
   height: 130px;
   max-width: 280px;
 
   transform: translateY(-29px);
-
-  // @media screen and (min-width: 480px) {
-  //   // max-width: 280px;
-  //   height: 100px;
-  // }
 
   @media screen and (min-width: $tablet) {
     max-width: 704px;
@@ -51,23 +45,15 @@
   &:nth-child(3) {
     animation-delay: 7s;
   }
-  // @media screen and (min-width: 480px) {
-  //   margin-right: auto;
-  //   margin-left: auto;
-  // }
 
   @media screen and (min-width: $tablet) {
     width: 704px;
     height: 100%;
-    // margin-right: auto;
-    // margin-left: auto;
   }
 
   @media screen and (min-width: $desktop) {
     width: 1013px;
     height: 100%;
-    // margin-right: auto;
-    // margin-left: auto;
   }
 }
 
@@ -102,67 +88,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
-  // background-image: -webkit-gradient(
-  //     linear,
-  //     left top,
-  //     right top,
-  //     from(rgba(255, 255, 255, 0.4)),
-  //     to(rgba(255, 255, 255, 0.4))
-  //   ),
-  //   url(../images/backgroud-mobile.jpg);
-
-  // background-image: linear-gradient(
-  //     to right,
-  //     rgba(255, 255, 255, 0.4),
-  //     rgba(255, 255, 255, 0.4)
-  //   ),
-  //   url(../images/backgroud-mobile.jpg);
-}
-
-@media screen and (min-width: $mobile) {
-  .container-gallery {
-    padding: 0 20px;
-  }
 }
 
 @media screen and (min-width: $tablet) {
   .container-gallery {
     padding: 0 32px;
-    // background-image: -webkit-gradient(
-    //     linear,
-    //     left top,
-    //     right top,
-    //     from(rgba(255, 255, 255, 0.4)),
-    //     to(rgba(255, 255, 255, 0.4))
-    //   ),
-    //   url(../images/backgroud-tablet.jpg);
-
-    // background-image: linear-gradient(
-    //     to right,
-    //     rgba(255, 255, 255, 0.4),
-    //     rgba(255, 255, 255, 0.4)
-    //   ),
-    //   url(../images/backgroud-tablet.jpg);
   }
 }
 
 @media screen and (min-width: $desktop) {
   .container-gallery {
     padding: 0 93px;
-    // background-image: -webkit-gradient(
-    //     linear,
-    //     left top,
-    //     right top,
-    //     from(rgba(255, 255, 255, 0.4)),
-    //     to(rgba(255, 255, 255, 0.4))
-    //   ),
-    //   url(../images/backgroud-desktop.jpg);
-
-    // background-image: linear-gradient(
-    //     to right,
-    //     rgba(255, 255, 255, 0.4),
-    //     rgba(255, 255, 255, 0.4)
-    //   ),
-    //   url(../images/backgroud-desktop.jpg);
   }
 }

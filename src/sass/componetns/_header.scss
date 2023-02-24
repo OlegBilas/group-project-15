@@ -123,7 +123,7 @@
   text-align: center;
 
   &.is-open {
-    z-index: 1;
+    z-index: 5;
     display: block;
     transform: translateX(0);
   }

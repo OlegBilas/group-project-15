@@ -1,4 +1,8 @@
-@import "../../node_modules/swiper/swiper-bundle.min.css";
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+
+.container-reviews {
+  padding: 0;
+}
 
 .reviews {
   padding-bottom: 393px;
@@ -26,7 +30,8 @@
 }
 
 .customers__review {
-  margin: 0 22px 32px;
+  max-width: 280px;
+  margin: 0 auto 32px;
   padding: 35px 39px;
 
   background-color: $color-green;
@@ -38,7 +43,7 @@
   border-radius: 10px;
 
   @media screen and (min-width: $tablet) {
-    margin: 0 32px 32px;
+    max-width: 704px;
     padding: 28px 80px;
 
     font-weight: 500;
@@ -49,7 +54,7 @@
     border-radius: 24px;
   }
   @media screen and (min-width: $desktop) {
-    margin: 0 17px 32px;
+    max-width: 1013px;
     padding: 43px 109px;
 
     font-size: 16px;
@@ -62,10 +67,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.86;
-
-  // @media screen and (min-width: $desktop) {
-  //   margin-bottom: 12px;
-  // }
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
