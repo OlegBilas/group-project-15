@@ -97,53 +97,11 @@ img {
   }
 }
 
-// Стилі кнопок
-// btn - базовий клас ДЛЯ КНОПОК ТА ПОСИЛАНЬ
-.btn {
-  display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  text-decoration: none;
-  text-align: center;
-  color: $color-deep-black;
-
-  border-radius: 10px;
-
-  &:focus {
-    color: $color-white;
-    outline-style: none;
-  }
-  & svg {
-    fill: currentColor;
-    margin-left: 4px;
-  }
-}
-
-.btn--fill {
-  @extend .btn;
-
-  border: none;
-  background-color: $color-yellow;
-
-  transition: color $time-duration $timing-function,
-    background-color $time-duration $timing-function;
-
-  &:hover,
-  &:focus {
-    background-color: $color-green-for-btn;
-  }
-  &:disabled {
-    background-color: $color-disabled-btn;
-  }
-}
+// Стилі кнопок (базові стилі дивись в паршелі _placeholder.scss)
 
 // для кнопок "Submit", "Open map"
 .submit-btn {
-  @extend .btn--fill;
+  @extend %btn--fill;
   padding-left: 34px;
   padding-right: 34px;
   @media screen and (max-width: $tablet) {
@@ -153,7 +111,7 @@ img {
 }
 
 .buy-now-btn {
-  @extend .btn--fill;
+  @extend %btn--fill;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +121,7 @@ img {
 }
 
 .read-more__button {
-  @extend .btn--fill;
+  @extend %btn--fill;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +131,7 @@ img {
 }
 
 .locations-btn {
-  @extend .btn--fill;
+  @extend %btn--fill;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,23 +140,8 @@ img {
   padding-right: 39px;
 }
 
-.btn--stroke {
-  @extend .btn;
-  background-color: transparent;
-  border: 2px solid $color-yellow;
-
-  transition: color $time-duration $timing-function, border-color $time-duration $timing-function;
-  &:hover,
-  &:focus {
-    border-color: $color-green-for-btn;
-  }
-  &:disabled {
-    border-color: $color-disabled-btn;
-  }
-}
-
 .hero__product-link {
-  @extend .btn--stroke;
+  @extend %btn--stroke;
 
   width: 134px;
   padding-left: 36px;
@@ -213,7 +156,7 @@ img {
 }
 
 .franchise-btn {
-  @extend .btn--stroke;
+  @extend %btn--stroke;
 
   display: flex;
   justify-content: center;
@@ -222,7 +165,7 @@ img {
 }
 
 .hero__about-link {
-  @extend .btn;
+  @extend %btn;
   padding: 12px 22px;
   background-color: transparent;
   border-color: transparent;

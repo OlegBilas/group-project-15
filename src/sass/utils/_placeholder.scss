@@ -7,3 +7,61 @@
 %nodecor {
   text-decoration: none;
 }
+
+// btn - базові стилі ДЛЯ КНОПОК ТА ПОСИЛАНЬ
+%btn {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-decoration: none;
+  text-align: center;
+  color: $color-deep-black;
+
+  border-radius: 10px;
+
+  &:focus {
+    color: $color-white;
+    outline-style: none;
+  }
+  & svg {
+    fill: currentColor;
+    margin-left: 4px;
+  }
+}
+
+%btn--fill {
+  @extend %btn;
+
+  border: none;
+  background-color: $color-yellow;
+
+  transition: color $time-duration $timing-function,
+    background-color $time-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $color-green-for-btn;
+  }
+  &:disabled {
+    background-color: $color-disabled-btn;
+  }
+}
+
+%btn--stroke {
+  @extend %btn;
+  background-color: transparent;
+  border: 2px solid $color-yellow;
+
+  transition: color $time-duration $timing-function, border-color $time-duration $timing-function;
+  &:hover,
+  &:focus {
+    border-color: $color-green-for-btn;
+  }
+  &:disabled {
+    border-color: $color-disabled-btn;
+  }
+}
