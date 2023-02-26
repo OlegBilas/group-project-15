@@ -346,7 +346,7 @@
 
   width: 320px;
 
-  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+  @media screen and (min-width: $mobile) and (max-width: calc($tablet - 0.1px)) {
     left: 320px;
   }
 

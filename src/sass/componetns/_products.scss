@@ -296,4 +296,10 @@
   margin-top: auto;
   padding: 16px;
   outline-style: none;
+  transition: transform $time-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
 }

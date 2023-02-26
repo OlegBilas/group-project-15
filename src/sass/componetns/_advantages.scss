@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 0.1px)) {
     flex-direction: column;
   }
 
@@ -61,7 +61,7 @@
     }
 
     &:not(:last-child) {
-      @media screen and (max-width: $tablet) {
+      @media screen and (max-width: calc($tablet - 0.1px)) {
         margin-bottom: 22px;
       }
 

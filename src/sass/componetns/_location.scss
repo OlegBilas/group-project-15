@@ -44,7 +44,7 @@
   // opacity: 1;
   // transition: transform 250ms ease-in, scale 250ms ease-in, opacity 250ms ease-in;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 0.1px)) {
     max-height: 365px;
     padding: 28px;
   }
@@ -88,7 +88,7 @@
   width: 100%;
   margin-bottom: 32px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 0.1px)) {
     height: 199px;
   }
 
@@ -100,6 +100,9 @@
 .contacts-modal__map {
   height: 100%;
   width: 100%;
+  @media screen and (max-width: calc($tablet - 0.1px)) {
+    max-height: 199px;
+  }
 }
 
 // .modal-locations__link {

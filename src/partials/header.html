@@ -6,50 +6,25 @@
     <nav class="nav-menu">
       <a href="index.html" class="logo">
         <picture>
-          <source
-            srcset="../src/images/logo/logo-desk.png 1x, ../src/images/logo/logo-desk-2x.png 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="../src/images/logo/logo-tab.png 1x, ../src/images/logo/logo-tab-2x.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="../src/images/logo/logo-mob.png 1x, ../src/images/logo/logo-mob-2x.png 2x"
-            media="(max-width: 768px)"
-          />
-          <img
-            src="../src/images/logo/logo-mob.png"
-            alt="Logo Company"
-            class="nav-menu-photo"
-            width="60"
-          />
+          <source srcset="../src/images/logo/logo-desk.png 1x, ../src/images/logo/logo-desk-2x.png 2x"
+            media="(min-width: 1200px)" />
+          <source srcset="../src/images/logo/logo-tab.png 1x, ../src/images/logo/logo-tab-2x.png 2x"
+            media="(min-width: 768px)" />
+          <source srcset="../src/images/logo/logo-mob.png 1x, ../src/images/logo/logo-mob-2x.png 2x"
+            media="(max-width: 768px)" />
+          <img src="../src/images/logo/logo-mob.png" alt="Logo Company" class="nav-menu-photo" width="60" />
         </picture>
       </a>
 
       <button class="nav-mobile-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg
-          class="nav-mobile-btn__style"
-          width="32"
-          height="32"
-          aria-label="Перемикач мобільного меню"
-        >
+        <svg class="nav-mobile-btn__style" width="32" height="32" aria-label="Перемикач мобільного меню">
           <use href="../src/images/icons.svg#icon-menu"></use>
         </svg>
       </button>
 
-      <div class="menu-container js-menu-container" id="mobile-menu">
-        <button
-          class="nav-mobile-btn js-close-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            class="nav-mobile-btn__style"
-            width="32"
-            height="32"
-            aria-label="Перемикач мобільного меню"
-          >
+      <div class="menu-container js-menu-container" aria-expanded="false" id="mobile-menu">
+        <button class="nav-mobile-btn js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="nav-mobile-btn__style" width="32" height="32" aria-label="Перемикач мобільного меню">
             <use href="../src/images/icons.svg#icon-close"></use>
           </svg>
         </button>

@@ -1,5 +1,5 @@
 .contacts__container {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 0.1px)) {
     transform: translateY(-350px);
     height: 1130px;
   }
@@ -35,7 +35,7 @@
   margin: 0 auto;
   background-color: $color-white;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 0.1px)) {
     margin-bottom: 16px;
     width: 280px;
     height: 412px;
@@ -69,7 +69,7 @@
   font-weight: 500;
   letter-spacing: 0.04em;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 0.1px)) {
     font-size: 12px;
     line-height: 1.2;
   }
@@ -84,7 +84,7 @@
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 0.1px)) {
     margin: 24px 0;
     padding: 24px 0;
   }
@@ -226,8 +226,9 @@
 
   // color: $color-black;
 
-  @media screen and (max-width: $tablet) {
-    margin: 0 auto 16px auto;
+  @media screen and (max-width: calc($tablet - 0.1px)) {
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
 }
 
@@ -259,7 +260,7 @@
 
   // color: $color-black;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 0.1px)) {
     margin: 0 auto;
   }
 
