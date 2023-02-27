@@ -4,6 +4,9 @@
  На оверлей задати клас "js-overlay-modal"
  На модалку задати атрибут data-modal="1" (по порядковому номеру)
  На кнопку закриття задати клас "js-close-modal" 
+ Можна суміщати в одному тегу бекдроп та модальне вікно, кнопку закриття однієї модалки
+ з одночасним відкриттям іншої модалки
+
  Для бекдропа в стилях повинен бути описаний клас:
  .is-hidden {
     opacity: 0;
@@ -36,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       у бекдропа, щоб показати останній, і блокуємо скролл на <body>. */
       overlay.classList.remove('is-hidden');
       document.addEventListener('keydown', onPressEscape);
-      bodyScrollLock.disableBodyScroll(document.body); // added
+      bodyScrollLock.disableBodyScroll(document.body);
     }); // end click
   }); // end foreach
 
@@ -45,8 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
       // Приховаємо бекдроп разом з модальним вікном і відновимо скролл на <body>
       const overlay = item.closest('.js-overlay-modal');
       overlay.classList.add('is-hidden');
-      document.removeEventListener('keydown', onPressEscape);
-      bodyScrollLock.enableBodyScroll(document.body); // added
+      if (!item.classList.contains('js-open-modal')) {
+        document.removeEventListener('keydown', onPressEscape);
+        bodyScrollLock.enableBodyScroll(document.body); // added
+      }
     });
   }); // end foreach
 
@@ -63,11 +68,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // end ready
 
-// Функція прослуховувача події на натиснення клавіші Esc активному бекдропові
+// Функція прослуховувача події на натиснення клавіші Esc на активному бекдропові
 function onPressEscape(e) {
   if (e.key === 'Escape') {
     //Активний бекдроп може бути лише один
-    document.querySelector('.backdrop:not(.is-hidden)').classList.add('is-hidden');
+    const overlay = document.querySelector('.js-overlay-modal:not(.is-hidden)');
+    overlay.classList.add('is-hidden');
     bodyScrollLock.enableBodyScroll(document.body); // added
   }
 }
