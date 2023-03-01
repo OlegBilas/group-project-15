@@ -45,12 +45,12 @@
   // transition: transform 250ms ease-in, scale 250ms ease-in, opacity 250ms ease-in;
 
   @media screen and (max-width: calc($tablet - 0.1px)) {
-    max-height: 365px;
+    height: 365px;
     padding: 28px;
   }
 
   @media screen and (min-width: $tablet) {
-    max-height: 568px;
+    height: 568px;
     padding: 32px 60px;
   }
 }
