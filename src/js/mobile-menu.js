@@ -1,5 +1,5 @@
 (() => {
-  const mobileMenuOverlay = document.querySelector('.js-overlay-modal');
+  const mobileMenuOverlay = document.querySelector('.js-overlay-modal:not(.is-hidden)');
   // const openMenuBtn = document.querySelector('.js-open-menu');
   // const closeMenuBtn = document.querySelector('.js-close-menu');
   // const menuLink = document.querySelectorAll('.mobile-menu-close');
