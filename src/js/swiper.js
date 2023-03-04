@@ -1,4 +1,5 @@
-// import Swiper from 'swiper';
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/swiper-bundle.min';
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -8,6 +9,7 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows

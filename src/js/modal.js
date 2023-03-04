@@ -16,6 +16,7 @@
 
 /* Для блокування скролла на <body> потрібне підключення бібіліотеки bodyScrollLock
  в тіло тега <body>, наприклад: <script src="./js/bodyScrollLock.js"></script>*/
+
 document.addEventListener('DOMContentLoaded', function () {
   // Записуємо в змінні масив елементів кнопок та бекдропів (підложка під модалку)
   const modalButtons = document.querySelectorAll('.js-open-modal');
@@ -65,8 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-});
-// end ready
+}); // end ready
 
 // Функція прослуховувача події на натиснення клавіші Esc на активному бекдропові
 function onPressEscape(e) {

@@ -6,60 +6,25 @@
     <nav class="nav-menu">
       <a href="index.html" class="logo">
         <picture>
-          <source
-            srcset="../src/images/logo/logo-desk.png 1x, ../src/images/logo/logo-desk-2x.png 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="../src/images/logo/logo-tab.png 1x, ../src/images/logo/logo-tab-2x.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="../src/images/logo/logo-mob.png 1x, ../src/images/logo/logo-mob-2x.png 2x"
-            media="(max-width: 768px)"
-          />
-          <img
-            src="../src/images/logo/logo-mob.png"
-            alt="Logo Company"
-            class="nav-menu-photo"
-            width="60"
-          />
+          <source srcset="../src/images/logo/logo-desk.png 1x, ../src/images/logo/logo-desk-2x.png 2x"
+            media="(min-width: 1200px)" />
+          <source srcset="../src/images/logo/logo-tab.png 1x, ../src/images/logo/logo-tab-2x.png 2x"
+            media="(min-width: 768px)" />
+          <source srcset="../src/images/logo/logo-mob.png 1x, ../src/images/logo/logo-mob-2x.png 2x"
+            media="(max-width: 768px)" />
+          <img src="../src/images/logo/logo-mob.png" alt="Logo Company" class="nav-menu-photo" width="60" />
         </picture>
       </a>
 
-      <button
-        class="nav-mobile-btn js-open-modal"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        data-modal="9"
-      >
-        <svg
-          class="nav-mobile-btn__style"
-          width="32"
-          height="32"
-          aria-label="Перемикач мобільного меню"
-        >
+      <button class="nav-mobile-btn js-open-modal" aria-expanded="false" aria-controls="mobile-menu" data-modal="9">
+        <svg class="nav-mobile-btn__style" width="32" height="32" aria-label="Перемикач мобільного меню">
           <use href="../src/images/icons.svg#icon-menu"></use>
         </svg>
       </button>
 
-      <div
-        class="menu-container js-overlay-modal is-hidden"
-        data-modal="9"
-        aria-expanded="false"
-        id="mobile-menu"
-      >
-        <button
-          class="nav-mobile-btn js-close-modal"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            class="nav-mobile-btn__style"
-            width="32"
-            height="32"
-            aria-label="Перемикач мобільного меню"
-          >
+      <div class="menu-container js-overlay-modal is-hidden" data-modal="9" aria-expanded="false" id="mobile-menu">
+        <button class="nav-mobile-btn js-close-modal" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="nav-mobile-btn__style" width="32" height="32" aria-label="Перемикач мобільного меню">
             <use href="../src/images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -79,7 +44,7 @@
           </li>
         </ul>
 
-        <div class="nav-menu__btn-in">
+        <div class="nav-menu__btn-in ">
           <button type="button" class="buy-now-btn js-close-modal js-open-modal" data-modal="1">
             Buy now
             <svg class="nav-menu__svg" width="12" height="12">
@@ -89,7 +54,7 @@
         </div>
       </div>
 
-      <div class="nav-menu__btn-out">
+      <div class="nav-menu__btn-out js-overlay-modal">
         <button type="button" class="buy-now-btn js-close-modal js-open-modal" data-modal="1">
           Buy now
           <svg class="nav-menu__svg" width="12" height="12">

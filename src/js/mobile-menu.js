@@ -1,5 +1,5 @@
 (() => {
-  const mobileMenuOverlay = document.querySelector('.js-overlay-modal:not(.is-hidden)');
+  //const mobileMenuOverlay = document.querySelector('.js-overlay-modal:not(.is-hidden)');
   // const openMenuBtn = document.querySelector('.js-open-menu');
   // const closeMenuBtn = document.querySelector('.js-close-menu');
   // const menuLink = document.querySelectorAll('.mobile-menu-close');
@@ -22,7 +22,11 @@
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
-    mobileMenuOverlay.classList.add('is-hidden');
+
+    const mobileMenuOverlay = document.querySelector('.js-overlay-modal:not(.is-hidden)');
+    if (mobileMenuOverlay) {
+      mobileMenuOverlay.classList.add('is-hidden');
+    }
     // openMenuBtn.classList.remove('is-open');
     // openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
