@@ -58,13 +58,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Додамо прослуховувача на клік по всіх оверлеях і встановимо їх приховування на кліку поза модалкою
   overlaysArr.forEach(item => {
-    item.addEventListener('click', function (e) {
-      if (e.target === e.currentTarget) {
-        item.classList.add('is-hidden');
-        document.removeEventListener('keydown', onPressEscape);
-        bodyScrollLock.enableBodyScroll(document.body); // added
-      }
-    });
+    if (item) {
+      item.addEventListener('click', function (e) {
+        if (e.target === e.currentTarget) {
+          item.classList.add('is-hidden');
+          document.removeEventListener('keydown', onPressEscape);
+          bodyScrollLock.enableBodyScroll(document.body); // added
+        }
+      });
+    }
   });
 }); // end ready
 
