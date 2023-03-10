@@ -15,60 +15,58 @@
  */
 
 /* Для блокування скролла на <body> потрібне підключення бібіліотеки bodyScrollLock
- в тіло тега <body>, наприклад: <script src="./js/bodyScrollLock.js"></script>*/
+ в тіло тега <body> <script src="./js/bodyScrollLock.js"></script>, або через 
+ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
+(в такому разі переписати в цьому модулі bodyScrollLock.disableBodyScroll на disableBodyScroll, наприклад) */
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Записуємо в змінні масив елементів кнопок та бекдропів (підложка під модалку)
-  const modalButtons = document.querySelectorAll('.js-open-modal');
-  const overlaysArr = document.querySelectorAll('.js-overlay-modal');
-  const closeButtons = document.querySelectorAll('.js-close-modal');
+// Записуємо в змінні масив елементів кнопок та бекдропів (підложка під модалку)
+const modalButtons = document.querySelectorAll('.js-open-modal');
+const overlaysArr = document.querySelectorAll('.js-overlay-modal');
+const closeButtons = document.querySelectorAll('.js-close-modal');
 
-  /* Перебираємо масив кнопок */
-  modalButtons.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-      /* Запобігаємо стандартній дії елемента. Тому що кнопку можна зробити по-різному. 
+/* Перебираємо масив кнопок */
+modalButtons.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    /* Запобігаємо стандартній дії елемента. Тому що кнопку можна зробити по-різному. 
       Хтось зробить посиланням, хтось кнопкою. Потрібно підстрахуватися. */
-      e.preventDefault();
+    e.preventDefault();
 
-      /* При кожному натисканні на кнопку ми будемо забирати вміст атрибуту data-modal
+    /* При кожному натисканні на кнопку ми будемо забирати вміст атрибуту data-modal
       і будемо шукати модальне вікно з таким же атрибутом, і бекдроп, що відповідає модальному вікну. */
-      const modalId = item.getAttribute('data-modal');
-      const modalElem = document.querySelector('[data-modal="' + modalId + '"]:not(button):not(a)');
-      const overlay = modalElem.closest('.js-overlay-modal');
+    const modalId = item.getAttribute('data-modal');
+    const modalElem = document.querySelector('[data-modal="' + modalId + '"]:not(button):not(a)');
+    const overlay = modalElem.closest('.js-overlay-modal');
 
-      /* Після того, як знайшли потрібний бекдроп, видалимо клас is-hidden
+    /* Після того, як знайшли потрібний бекдроп, видалимо клас is-hidden
       у бекдропа, щоб показати останній, і блокуємо скролл на <body>. */
-      overlay.classList.remove('is-hidden');
-      document.addEventListener('keydown', onPressEscape);
-      bodyScrollLock.disableBodyScroll(document.body);
-    }); // end click
-  }); // end foreach
+    overlay.classList.remove('is-hidden');
+    document.addEventListener('keydown', onPressEscape);
+    bodyScrollLock.disableBodyScroll(document.body);
+  }); // end click
+}); // end foreach
 
-  closeButtons.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-      // Приховаємо бекдроп разом з модальним вікном і відновимо скролл на <body>
-      const overlay = item.closest('.js-overlay-modal');
-      overlay.classList.add('is-hidden');
-      if (!item.classList.contains('js-open-modal')) {
-        document.removeEventListener('keydown', onPressEscape);
-        bodyScrollLock.enableBodyScroll(document.body); // added
-      }
-    });
+closeButtons.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    // Приховаємо бекдроп разом з модальним вікном і відновимо скролл на <body>
+    const overlay = item.closest('.js-overlay-modal');
+    overlay.classList.add('is-hidden');
+    if (!item.classList.contains('js-open-modal')) {
+      document.removeEventListener('keydown', onPressEscape);
+      bodyScrollLock.enableBodyScroll(document.body); // added
+    }
   }); // end foreach
 
   // Додамо прослуховувача на клік по всіх оверлеях і встановимо їх приховування на кліку поза модалкою
   overlaysArr.forEach(item => {
-    if (item) {
-      item.addEventListener('click', function (e) {
-        if (e.target === e.currentTarget) {
-          item.classList.add('is-hidden');
-          document.removeEventListener('keydown', onPressEscape);
-          bodyScrollLock.enableBodyScroll(document.body); // added
-        }
-      });
-    }
+    item.addEventListener('click', function (e) {
+      if (e.target === e.currentTarget) {
+        item.classList.add('is-hidden');
+        document.removeEventListener('keydown', onPressEscape);
+        bodyScrollLock.enableBodyScroll(document.body); // added
+      }
+    });
   });
-}); // end ready
+}); // end foreach
 
 // Функція прослуховувача події на натиснення клавіші Esc на активному бекдропові
 function onPressEscape(e) {
