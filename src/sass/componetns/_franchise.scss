@@ -1,45 +1,4 @@
-// .overlay {
-//   opacity: 0;
-//   visibility: hidden;
-
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   z-index: 20;
-//   transition: 0.3s all;
-// }
-
-// .modal {
-// opacity: 0;
-// visibility: hidden;
-// position: fixed;
-// top: 50%;
-// left: 50%;
-// transform: translate(-50%, -50%) scale(1);
-// z-index: 30;
-// transition: transform $time-duration $timing-function, scale $time-duration $timing-function,
-//   opacity $time-duration $timing-function;
-// }
-
-// .modal.active,
-// .overlay.active {
-//   opacity: 1;
-//   visibility: visible;
-// }
-
 .franchise-modal {
-  // margin: 0 auto;
-  // max-height: 100%;
-  // overflow: auto;
-  // background-color: $color-white;
-  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  //   0px 2px 1px rgba(0, 0, 0, 0.2);
-  // border-radius: 10px;
-  // border: 2px solid $color-yellow;
-
   @media screen and (max-width: calc($tablet - 0.1px)) {
     height: 674px;
     padding: 28px;
@@ -50,24 +9,6 @@
     padding: 32px 60px;
   }
 }
-
-// .modal__close-button {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   position: absolute;
-//   top: 0px;
-//   right: 0px;
-//   width: 30px;
-//   height: 30px;
-//   border: none;
-//   background-color: transparent;
-
-//   &:hover > .modal__icon-close,
-//   &:focus > .modal__icon-close {
-//     fill: $color-green-for-btn;
-//   }
-// }
 
 .franchise-form__title {
   font-family: 'Seymour One';

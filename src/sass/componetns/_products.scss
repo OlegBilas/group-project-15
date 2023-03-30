@@ -88,22 +88,11 @@
   @media screen and (min-width: $desktop) {
     width: 302px;
     height: 302px;
-    // top: -151px;
   }
 }
 .products-list:nth-child(2n)::before {
-  // content: "";
-  // position: absolute;
-  // width: 200px;
-  // height: 200px;
-  // top: -151px;
-
   background-image: url(/src/images/products/icelatte.jpg);
 
-  // border-radius: 50%;
-  // top: -100px;
-  // left: 50%;
-  // transform: translateX(-50%);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/src/images/products/icelatte2x.jpg);
     background-size: cover;
@@ -119,21 +108,11 @@
   @media screen and (min-width: $desktop) {
     width: 302px;
     height: 302px;
-    // top: -151px;
   }
 }
 .products-list:last-child::before {
-  // content: "";
-  // position: absolute;
-  // width: 200px;
-  // height: 200px;
-
   background-image: url(/src/images/products/ice.jpg);
 
-  // border-radius: 50%;
-  // top: -100px;
-  // left: 50%;
-  // transform: translateX(-50%);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/src/images/products/ice2x.jpg);
     background-size: cover;
@@ -149,7 +128,6 @@
   @media screen and (min-width: $desktop) {
     width: 302px;
     height: 302px;
-    // top: -151px;
   }
 }
 

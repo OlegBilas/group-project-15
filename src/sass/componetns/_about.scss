@@ -178,22 +178,8 @@
   }
 
   &__button {
-    // background: $color-yellow;
-    // border-radius: 10px;
-    // border: none;
     margin-top: 10px;
-    // padding: 12px 54px;
-
-    // font-weight: 600;
-    // line-height: calc(18 / 14);
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
-    // color: $color-deep-black;
-    // transition-property: background-color, color;
-    // transition-duration: $time-duration;
-    // transition-timing-function: $timing-function;
-
+    
     @media screen and (min-width: $tablet) {
       margin-top: 32px;
     }
@@ -202,19 +188,6 @@
       margin-top: 54px;
     }
 
-    // &:hover {
-    //   background-color: #0a8817;
-    // }
-
-    // &:focus {
-    //   background-color: #0a8817;
-    //   color: $color-white;
-    // }
-
-    // &--icon {
-    //   margin-left: 4px;
-    //   fill: currentColor;
-    // }
   }
 }
 
@@ -233,28 +206,7 @@
     height: 449px;
   }
 
-  // &__close {
-  //   position: absolute;
-  //   top: 12px;
-  //   right: 12px;
-  //   color: $color-black;
-  //   border: none;
-  //   background-color: $color-white;
-  //   border-radius: 100%;
-  //   transition-property: color;
-  //   transition-duration: $time-duration;
-  //   transition-timing-function: $timing-function;
-
-  //   &:hover,
-  //   &:focus {
-  //     color: $color-green-for-btn;
-  //   }
-
-  //   &--icon {
-  //     fill: currentColor;
-  //   }
-  // }
-
+  
   &__caption {
     font-family: 'Seymour One';
     font-weight: 400;
@@ -299,6 +251,4 @@
   }
 }
 
-// .is-hidden {
-//   display: none;
-// }
+

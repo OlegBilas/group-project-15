@@ -75,7 +75,6 @@
 
     @media screen and (min-width: $desktop) {
       color: $color-yellow;
-      // cursor: url(/src/images/cursor/vector.png), auto;
     }
   }
 }
@@ -94,30 +93,6 @@
 }
 
 // =========================Menu Mobile Button=====================================================================================//
-// .menu-button {
-//   display: inline-flex;
-//   padding: 0;
-//   border: none;
-//   position: relative;
-//   z-index: 2;
-//   overflow-y: scroll;
-
-//   @media screen and (min-width: $desktop) {
-//     display: none;
-//   }
-// }
-
-// .button-menu {
-//   display: none;
-// }
-
-// .menu-button.is-open .button-menu {
-//   display: block;
-// }
-
-// .menu-button.is-open .button-cross {
-//   display: none;
-// }
 
 .menu-container {
   text-align: center;
@@ -125,7 +100,7 @@
   @media screen and (max-width: calc($desktop - 0.1px)) {
     position: fixed;
     z-index: 5;
-    // display: block;
+
     transform: translateX(0);
     top: 0;
     left: 0;
@@ -156,32 +131,6 @@
 }
 
 // ==================== Mob menu buttom ==============//
-
-// .nav-menu__btn {
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: 1.2;
-//   width: 152px;
-//   height: 42px;
-//   border-radius: 10px;
-//   border: none;
-//   border-color: transparent;
-//   background-color: $color-yellow;
-//   color: $color-deep-black;
-
-//   &:hover,
-//   &:focus {
-//     background-color: $color-green-for-btn;
-//     transition: background-color $time-duration $timing-function;
-//     outline: none;
-//   }
-
-//   &:focus {
-//     color: $color-white;
-//     fill: $color-white;
-//   }
-// }
-
 .nav-menu__btn-in {
   @media screen and (min-width: $tablet) {
     display: none;
